@@ -47,7 +47,7 @@ Users can quickly access the information of their desired certificate or documen
     * Search for "FanaByte Certificate".
     * Install and activate.
 2.  **Manual Upload:**
-    * Download the latest release `.zip` file from the [GitHub Releases](link-to-your-releases-page) page.
+    * Download the latest release `.zip` file from the [GitHub Releases](https://github.com/fanabyte/fanabyte-certificate/releases/tag/1.2.0) page.
     * Go to `Plugins > Add New > Upload Plugin`.
     * Choose the zip file and click "Install Now", then activate.
 3.  **Initial Configuration:**
@@ -111,7 +111,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## Support
 
-For bug reports, feature requests, or other issues, please use the [GitHub Issues](link-to-your-issues-page) section of this repository.
+For bug reports, feature requests, or other issues, please use the [GitHub Issues](https://github.com/fanabyte/fanabyte-certificate/releases/tag/1.2.0) section of this repository.
 
 <br/>
 <hr/>
@@ -163,7 +163,7 @@ For bug reports, feature requests, or other issues, please use the [GitHub Issue
     * "FanaByte Certificate" را جستجو کنید.
     * نصب و فعال کنید.
 ۲.  **بارگذاری دستی:**
-    * آخرین نسخه فایل `.zip` را از صفحه [GitHub Releases](link-to-your-releases-page) دانلود کنید.
+    * آخرین نسخه فایل `.zip` را از صفحه [GitHub Releases](https://github.com/fanabyte/fanabyte-certificate/releases/tag/1.2.0) دانلود کنید.
     * به `افزونه‌ها > افزودن > بارگذاری افزونه` بروید.
     * فایل zip را انتخاب و نصب کنید، سپس فعال نمایید.
 ۳.  **پیکربندی اولیه:**
