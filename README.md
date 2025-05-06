@@ -111,7 +111,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## Support
 
-For bug reports, feature requests, or other issues, please use the [GitHub Issues](https://github.com/fanabyte/fanabyte-certificate/releases/tag/1.2.0) section of this repository.
+For bug reports, feature requests, or other issues, please use the [GitHub Issues](https://github.com/fanabyte/fanabyte-certificate/issues) section of this repository.
 
 <br/>
 <hr/>
