@@ -227,6 +227,6 @@ Pull request ها پذیرفته می‌شوند. برای تغییرات بزر
 
 ## پشتیبانی
 
-برای گزارش باگ، درخواست ویژگی جدید یا سایر مسائل، لطفاً از بخش [GitHub Issues](link-to-your-issues-page) این مخزن استفاده کنید.
+برای گزارش باگ، درخواست ویژگی جدید یا سایر مسائل، لطفاً از بخش [GitHub Issues](https://github.com/fanabyte/fanabyte-certificate/issues) این مخزن استفاده کنید.
 
 </div>
