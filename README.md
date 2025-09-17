@@ -47,7 +47,7 @@ Users can quickly access the information of their desired certificate or documen
     * Search for "FanaByte Certificate".
     * Install and activate.
 2.  **Manual Upload:**
-    * Download the latest release `.zip` file from the [GitHub Releases](https://github.com/fanabyte/fanabyte-certificate/releases/tag/1.2.0) page.
+    * Download the latest release `.zip` file from the [GitHub Releases](https://github.com/fanabyte/fanabyte-certificate/releases/tag/1.3.0) page.
     * Go to `Plugins > Add New > Upload Plugin`.
     * Choose the zip file and click "Install Now", then activate.
 3.  **Initial Configuration:**
@@ -85,7 +85,12 @@ Users can quickly access the information of their desired certificate or documen
 
 ## Changelog
 
-### 1.2.0 (Your Current Version)
+### 1.3.0 (Your Current Version)
+* Added a new 'Plugin Language' setting to switch between Persian (RTL) and English (LTR).
+* Refactored CSS to support dynamic RTL/LTR switching.
+* Updated plugin version to 1.3.0.
+
+### 1.2.0
 * Added full internationalization support (i18n) for Persian and English.
 * Added comprehensive Persian and English comments to all code files.
 * Improved code structure and added necessary documentation for release.
@@ -163,7 +168,7 @@ For bug reports, feature requests, or other issues, please use the [GitHub Issue
     * "FanaByte Certificate" را جستجو کنید.
     * نصب و فعال کنید.
 ۲.  **بارگذاری دستی:**
-    * آخرین نسخه فایل `.zip` را از صفحه [GitHub Releases](https://github.com/fanabyte/fanabyte-certificate/releases/tag/1.2.0) دانلود کنید.
+    * آخرین نسخه فایل `.zip` را از صفحه [GitHub Releases](https://github.com/fanabyte/fanabyte-certificate/releases/tag/1.3.0) دانلود کنید.
     * به `افزونه‌ها > افزودن > بارگذاری افزونه` بروید.
     * فایل zip را انتخاب و نصب کنید، سپس فعال نمایید.
 ۳.  **پیکربندی اولیه:**
@@ -201,7 +206,12 @@ For bug reports, feature requests, or other issues, please use the [GitHub Issue
 
 ## لیست تغییرات (Changelog)
 
-### نسخه ۱.۲.۰ (نسخه فعلی شما)
+### نسخه ۱.۳.۰ (نسخه فعلی شما)
+* افزودن تنظیم جدید «زبان افزونه» برای جابجایی بین فارسی (RTL) و انگلیسی (LTR).
+* اصلاح CSS برای پشتیبانی از جابجایی پویای RTL/LTR.
+* به‌روزرسانی نسخه افزونه به ۱.۳.۰.
+
+### نسخه ۱.۲.۰
 * افزودن پشتیبانی کامل از دو زبان فارسی و انگلیسی (i18n).
 * افزودن کامنت‌گذاری جامع فارسی و انگلیسی به تمام فایل‌های کد.
 * بهبود ساختار کد و افزودن توضیحات لازم برای انتشار.
