@@ -3,21 +3,19 @@
 
 /* --- CSS Variables --- */
 /* --- متغیرهای CSS --- */
-/* Define reusable values for colors, spacing, etc. */
-/* تعریف مقادیر قابل استفاده مجدد برای رنگ‌ها، فاصله‌ها و غیره. */
 :root {
-    --fbc-pub-text: #333;        /* Main text color / رنگ متن اصلی */
-    --fbc-pub-text-light: #555;  /* Lighter text color / رنگ متن روشن‌تر */
-    --fbc-pub-label: #444;       /* Label text color / رنگ متن برچسب */
-    --fbc-pub-border: #e8e8e8;   /* Border color / رنگ حاشیه */
-    --fbc-pub-bg: #fff;          /* Main background color / رنگ پس‌زمینه اصلی */
-    --fbc-pub-bg-alt: #f9f9f9;   /* Alternate background color / رنگ پس‌زمینه جایگزین */
-    --fbc-pub-accent: #0073e5;   /* Accent color (e.g., links) / رنگ تاکیدی (مثلاً برای لینک‌ها) */
-    --fbc-pub-success: #00a32a;  /* Success color / رنگ موفقیت */
-    --fbc-pub-error: #d9534f;    /* Error color / رنگ خطا */
-    --fbc-pub-radius: 4px;       /* Border radius / شعاع حاشیه */
-    --fbc-pub-spacing: 20px;     /* Standard spacing unit / واحد فاصله استاندارد */
-    --fbc-pub-spacing-lg: 30px;  /* Larger spacing unit / واحد فاصله بزرگتر */
+    --fbc-pub-text: #333;
+    --fbc-pub-text-light: #555;
+    --fbc-pub-label: #444;
+    --fbc-pub-border: #e8e8e8;
+    --fbc-pub-bg: #fff;
+    --fbc-pub-bg-alt: #f9f9f9;
+    --fbc-pub-accent: #0073e5;
+    --fbc-pub-success: #00a32a;
+    --fbc-pub-error: #d9534f;
+    --fbc-pub-radius: 4px;
+    --fbc-pub-spacing: 20px;
+    --fbc-pub-spacing-lg: 30px;
 }
 
 /* --- Base Container Styles (Applies to form, results, single view) --- */
@@ -25,360 +23,279 @@
 .fb-cert-lookup-form-container,
 .fb-cert-results-container,
 .fb-cert-single-container {
-    /* font-family inherits from the theme / فونت از پوسته به ارث برده می‌شود */
     color: var(--fbc-pub-text);
-    max-width: 960px; /* Increased max-width for the new layout / افزایش حداکثر عرض برای طرح جدید */
-    margin: var(--fbc-pub-spacing-lg) auto; /* Center the container with top/bottom margin / مرکز کردن کانتینر با مارجین بالا/پایین */
-    padding: var(--fbc-pub-spacing-lg) 40px; /* Generous padding / پدینگ زیاد */
+    max-width: 960px;
+    margin: var(--fbc-pub-spacing-lg) auto;
+    padding: var(--fbc-pub-spacing-lg) 40px;
     background-color: var(--fbc-pub-bg);
     border: 1px solid var(--fbc-pub-border);
     border-radius: var(--fbc-pub-radius);
-    direction: rtl; /* Set text direction to Right-to-Left / تنظیم جهت متن به راست‌به‌چپ */
-    text-align: right; /* Align text to the right / تراز متن به راست */
-    box-sizing: border-box; /* Include padding/border in element's total width/height / شامل کردن پدینگ/حاشیه در عرض/ارتفاع کلی المان */
-    line-height: 1.8; /* Set line height for readability / تنظیم ارتفاع خط برای خوانایی */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06); /* Soft box shadow / سایه جعبه ملایم */
+    direction: ltr; /* Default LTR */
+    text-align: left; /* Default LTR */
+    box-sizing: border-box;
+    line-height: 1.8;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
 }
 
 /* --- Search Form Styles --- */
 /* --- استایل‌های فرم جستجو --- */
-/* Container for the form (uses base styles) */
-/* کانتینر برای فرم (از استایل‌های پایه استفاده می‌کند) */
-.fb-cert-lookup-form-container {
-    /* Specific form container styles can go here if needed */
-    /* استایل‌های خاص کانتینر فرم در صورت نیاز می‌توانند اینجا قرار گیرند */
-}
-/* Individual form field wrapper */
-/* دربرگیرنده فیلد تکی فرم */
 .fb-cert-form-field {
-    margin-bottom: var(--fbc-pub-spacing); /* Space below each field / فاصله زیر هر فیلد */
+    margin-bottom: var(--fbc-pub-spacing);
 }
-/* Form field label */
-/* برچسب فیلد فرم */
 .fb-cert-form-field label {
-    display: block; /* Make label take full width / بلاک کردن برچسب برای گرفتن عرض کامل */
-    margin-bottom: 6px; /* Space below label / فاصله زیر برچسب */
-    font-weight: 500; /* Slightly bold label / برچسب کمی ضخیم‌تر */
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
     color: var(--fbc-pub-label);
-    font-size: 0.9em; /* Slightly smaller label text / متن برچسب کمی کوچکتر */
+    font-size: 0.9em;
 }
-/* Text input field */
-/* فیلد ورودی متن */
 .fb-cert-form-field input[type="text"] {
-    width: 100%; /* Full width input / ورودی با عرض کامل */
-    padding: 11px 15px; /* Input padding / پدینگ ورودی */
-    border: 1px solid #ccc; /* Input border / حاشیه ورودی */
+    width: 100%;
+    padding: 11px 15px;
+    border: 1px solid #ccc;
     border-radius: var(--fbc-pub-radius);
     box-sizing: border-box;
-    font-size: 1em; /* Standard font size / اندازه فونت استاندارد */
+    font-size: 1em;
     background-color: #fff;
-    transition: border-color 0.2s ease, box-shadow 0.2s ease; /* Smooth transitions / انتقال‌های نرم */
-    box-shadow: inset 0 1px 2px rgba(0,0,0,0.06); /* Subtle inset shadow / سایه داخلی ملایم */
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.06);
 }
-/* Input field focus style */
-/* استایل فوکوس فیلد ورودی */
 .fb-cert-form-field input[type="text"]:focus {
-    border-color: var(--fbc-pub-accent); /* Highlight border on focus / هایلایت کردن حاشیه در فوکوس */
-    outline: none; /* Remove default browser outline / حذف اوت‌لاین پیش‌فرض مرورگر */
-    box-shadow: 0 0 0 3px rgba(0, 115, 229, 0.15); /* Subtle focus ring / حلقه فوکوس ملایم */
+    border-color: var(--fbc-pub-accent);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 115, 229, 0.15);
 }
-/* Form submit button container */
-/* کانتینر دکمه ارسال فرم */
 .fb-cert-form-submit {
-    margin-top: 25px; /* Space above submit button / فاصله بالای دکمه ارسال */
+    margin-top: 25px;
 }
-/* Form submit button */
-/* دکمه ارسال فرم */
 .fb-cert-form-submit button {
-    display: inline-block; /* Allow centering if needed / اجازه مرکز کردن در صورت نیاز */
-    padding: 11px 28px; /* Button padding / پدینگ دکمه */
-    border: none; /* No border / بدون حاشیه */
+    display: inline-block;
+    padding: 11px 28px;
+    border: none;
     border-radius: var(--fbc-pub-radius);
-    color: #fff !important; /* White text, important to override theme styles / متن سفید، مهم برای بازنویسی استایل‌های پوسته */
+    color: #fff !important;
     font-size: 1em;
     font-weight: 500;
-    cursor: pointer; /* Pointer cursor on hover / نشانگر اشاره‌گر در هاور */
+    cursor: pointer;
     text-align: center;
-    text-decoration: none !important; /* Remove underline / حذف زیرخط */
-    transition: opacity 0.2s ease; /* Fade effect on hover / افکت محو شدن در هاور */
-    box-shadow: 0 1px 2px rgba(0,0,0,0.08); /* Subtle button shadow / سایه ملایم دکمه */
-    /* Background color is set inline via PHP settings / رنگ پس‌زمینه به صورت inline از طریق تنظیمات PHP تنظیم می‌شود */
+    text-decoration: none !important;
+    transition: opacity 0.2s ease;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.08);
 }
-/* Submit button hover effect */
-/* افکت هاور دکمه ارسال */
 .fb-cert-form-submit button:hover {
-    opacity: 0.88; /* Slightly transparent on hover / کمی شفاف در هاور */
+    opacity: 0.88;
 }
 
 /* --- Results Container Styles --- */
 /* --- استایل‌های کانتینر نتایج --- */
 .fb-cert-results-container {
-    margin-top: var(--fbc-pub-spacing-lg); /* Space above results / فاصله بالای نتایج */
-    padding-top: var(--fbc-pub-spacing); /* Padding inside container / پدینگ داخل کانتینر */
-    /* border-top: 1px dashed var(--fbc-pub-border); */ /* Optional top border / حاشیه بالایی اختیاری - Removed as base container has border / حذف شد چون کانتینر پایه حاشیه دارد */
+    margin-top: var(--fbc-pub-spacing-lg);
+    padding-top: var(--fbc-pub-spacing);
 }
-/* Results heading (e.g., "Certificate Details:", "X certificates found...") */
-/* عنوان نتایج (مثلاً "جزئیات مدرک:"، "X مدرک یافت شد...") */
 .fb-cert-results-container h2 {
     font-size: 1.5em;
     font-weight: 600;
     color: var(--fbc-pub-text);
-    margin: 0 0 var(--fbc-pub-spacing) 0; /* Margin below heading / مارجین زیر عنوان */
-    padding-bottom: 10px; /* Space below text, above border / فاصله زیر متن، بالای حاشیه */
-    border-bottom: 1px solid var(--fbc-pub-border); /* Underline heading / زیرخط عنوان */
+    margin: 0 0 var(--fbc-pub-spacing) 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--fbc-pub-border);
 }
-/* List of multiple results */
-/* لیست نتایج چندگانه */
 .fb-cert-results-list {
-    list-style: none; /* Remove default list bullets / حذف گلوله‌های پیش‌فرض لیست */
-    padding: 0; /* Remove default padding / حذف پدینگ پیش‌فرض */
-    margin: 15px 0 0 0; /* Margin above list / مارجین بالای لیست */
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 0;
 }
 .fb-cert-results-list li {
-    padding: 8px 0; /* Padding around list items / پدینگ دور آیتم‌های لیست */
-    margin-bottom: 4px; /* Space between items / فاصله بین آیتم‌ها */
-    border-bottom: 1px dotted #eee; /* Dotted separator / جدا کننده نقطه‌چین */
+    padding: 8px 0;
+    margin-bottom: 4px;
+    border-bottom: 1px dotted #eee;
 }
 .fb-cert-results-list li:last-child {
-    border-bottom: none; /* Remove border on last item / حذف حاشیه در آخرین آیتم */
+    border-bottom: none;
     margin-bottom: 0;
 }
-/* Links within the results list */
-/* لینک‌ها داخل لیست نتایج */
 .fb-cert-results-list li a {
-    text-decoration: none; /* Remove underline / حذف زیرخط */
+    text-decoration: none;
     color: var(--fbc-pub-accent);
     font-weight: 500;
-    transition: color 0.2s ease; /* Smooth color change on hover / تغییر رنگ نرم در هاور */
-    display: inline-block; /* Needed for padding / لازم برای پدینگ */
+    transition: color 0.2s ease;
+    display: inline-block;
     padding: 2px 0;
 }
 .fb-cert-results-list li a:hover {
-    color: #0056b3; /* Darker blue on hover / آبی تیره‌تر در هاور */
+    color: #0056b3;
 }
-/* Add a small arrow/bullet before list item links (RTL) */
-/* افزودن یک فلش/گلوله کوچک قبل از لینک‌های آیتم لیست (RTL) */
 .fb-cert-results-list li a::before {
-    content: "\203A"; /* Single right-pointing angle quotation mark / علامت نقل قول زاویه‌ای تکی به سمت راست */
-    margin-left: 8px; /* Space after bullet (RTL) / فاصله بعد از گلوله (RTL) */
+    content: "\203A";
+    margin-right: 8px;
     font-weight: bold;
-    opacity: 0.6; /* Make bullet slightly dimmer / کمی کم‌نور کردن گلوله */
+    opacity: 0.6;
 }
 
 /* === New Certificate Layout Styles (Single View & Shortcode Details) === */
 /* === استایل‌های طرح جدید مدرک (نمای تکی و جزئیات شورت‌کد) === */
-
-/* Separator line style */
-/* استایل خط جدا کننده */
 .fb-cert-separator {
-    border: none; /* Remove default border / حذف حاشیه پیش‌فرض */
-    border-top: 1px solid var(--fbc-pub-border); /* Simple top border / حاشیه بالایی ساده */
-    margin: var(--fbc-pub-spacing) 0; /* Space above and below separator / فاصله بالا و پایین جدا کننده */
+    border: none;
+    border-top: 1px solid var(--fbc-pub-border);
+    margin: var(--fbc-pub-spacing) 0;
 }
-
-/* --- Header Area (Title & Photo) --- */
-/* --- ناحیه هدر (عنوان و عکس) --- */
 .fb-cert-header {
-    display: flex; /* Use flexbox for layout / استفاده از flexbox برای طرح‌بندی */
-    justify-content: space-between; /* Push title and photo apart / جدا کردن عنوان و عکس */
-    align-items: flex-start; /* Align items to the top / تراز آیتم‌ها به بالا */
-    margin-bottom: var(--fbc-pub-spacing); /* Space below header / فاصله زیر هدر */
-    gap: var(--fbc-pub-spacing); /* Space between title and photo / فاصله بین عنوان و عکس */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: var(--fbc-pub-spacing);
+    gap: var(--fbc-pub-spacing);
 }
-
-/* Title container */
-/* کانتینر عنوان */
 .fb-cert-title {
-    flex-grow: 1; /* Allow title to take available space / اجازه دادن به عنوان برای گرفتن فضای موجود */
+    flex-grow: 1;
 }
-/* Main entry title (h1) */
-/* عنوان اصلی ورودی (h1) */
 .fb-cert-title .entry-title {
-    margin: 0; /* Remove default margins / حذف مارجین‌های پیش‌فرض */
+    margin: 0;
     padding: 0;
-    border-bottom: none; /* Remove any default border / حذف هرگونه حاشیه پیش‌فرض */
-    font-size: 1.8em; /* Large title size / اندازه عنوان بزرگ */
-    font-weight: 600; /* Bold title / عنوان ضخیم */
+    border-bottom: none;
+    font-size: 1.8em;
+    font-weight: 600;
     color: var(--fbc-pub-text);
-    line-height: 1.4; /* Adjust line height / تنظیم ارتفاع خط */
+    line-height: 1.4;
 }
-/* Override default theme single title styles if necessary */
-/* بازنویسی استایل‌های عنوان تکی پیش‌فرض پوسته در صورت لزوم */
 .fb-cert-single-container h1.entry-title {
     border-bottom: none;
     margin-bottom: 0;
     padding-bottom: 0;
 }
-
-/* Personal photo container */
-/* کانتینر عکس پرسنلی */
 .fb-cert-personal-photo {
-    flex-shrink: 0; /* Prevent photo from shrinking / جلوگیری از کوچک شدن عکس */
-    width: 120px; /* Fixed width / عرض ثابت */
-    height: 120px; /* Fixed height (square) / ارتفاع ثابت (مربع) */
-    overflow: hidden; /* Hide parts of image that don't fit / پنهان کردن بخش‌هایی از تصویر که جا نمی‌شوند */
-    border-radius: var(--fbc-pub-radius); /* Optional: rounded corners / اختیاری: گوشه‌های گرد */
+    flex-shrink: 0;
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    border-radius: var(--fbc-pub-radius);
     border: 1px solid var(--fbc-pub-border);
-    background-color: #f0f0f0; /* Placeholder background if image fails / پس‌زمینه جایگزین اگر تصویر لود نشد */
+    background-color: #f0f0f0;
 }
-/* Personal photo image itself */
-/* خود تصویر عکس پرسنلی */
 .fb-cert-personal-photo img.personal-photo {
-    display: block; /* Remove extra space below image / حذف فضای اضافی زیر تصویر */
+    display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Scale and crop image to fit container / مقیاس‌دهی و برش تصویر برای جا شدن در کانتینر */
-    object-position: center center; /* Center the image within the container / مرکز کردن تصویر داخل کانتینر */
+    object-fit: cover;
+    object-position: center center;
 }
-
-/* --- Body Area (Custom Fields) --- */
-/* --- ناحیه بدنه (فیلدهای سفارشی) --- */
 .fb-cert-body {
-    padding: 0; /* Reset padding if needed / ریست کردن پدینگ در صورت نیاز */
+    padding: 0;
 }
-/* Heading for the custom fields section (h3) */
-/* عنوان برای بخش فیلدهای سفارشی (h3) */
 .fb-cert-body h3 {
     font-size: 1.2em;
     font-weight: 600;
     color: var(--fbc-pub-label);
-    margin: 0 0 15px 0; /* Space below heading / فاصله زیر عنوان */
-    padding-bottom: 8px; /* Space below text / فاصله زیر متن */
-    border-bottom: 1px dotted var(--fbc-pub-border); /* Dotted underline / زیرخط نقطه‌چین */
+    margin: 0 0 15px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px dotted var(--fbc-pub-border);
 }
-/* List containing custom fields */
-/* لیست حاوی فیلدهای سفارشی */
 .fb-cert-custom-fields-list {
-    list-style: none; /* Remove list bullets / حذف گلوله‌های لیست */
+    list-style: none;
     padding: 0;
-    margin: 0 0 var(--fbc-pub-spacing) 0; /* Space below the list / فاصله زیر لیست */
+    margin: 0 0 var(--fbc-pub-spacing) 0;
 }
-/* Individual custom field list item */
-/* آیتم لیست فیلد سفارشی تکی */
 .fb-cert-custom-fields-list li {
-    padding: 10px 0; /* Vertical padding / پدینگ عمودی */
-    border-bottom: 1px solid #f5f5f5; /* Lighter separator between fields / جدا کننده روشن‌تر بین فیلدها */
-    display: flex; /* Use flex for label/value layout / استفاده از flex برای طرح‌بندی برچسب/مقدار */
-    flex-wrap: wrap; /* Allow wrapping on small screens / اجازه شکستن خط در صفحه‌های کوچک */
-    align-items: baseline; /* Align text baselines / تراز خط پایه متن */
-    gap: 5px 15px; /* Gap between label and value / فاصله بین برچسب و مقدار */
+    padding: 10px 0;
+    border-bottom: 1px solid #f5f5f5;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 5px 15px;
 }
 .fb-cert-custom-fields-list li:last-child {
-    border-bottom: none; /* Remove border on last item / حذف حاشیه در آخرین آیتم */
+    border-bottom: none;
 }
-/* Custom field label */
-/* برچسب فیلد سفارشی */
 .fb-cert-custom-fields-list .field-label {
-    flex: 0 0 150px; /* Fixed width for label column / عرض ثابت برای ستون برچسب */
+    flex: 0 0 150px;
     font-weight: 500;
     color: var(--fbc-pub-text-light);
-    padding-left: 10px; /* Space after label (RTL) / فاصله بعد از برچسب (RTL) */
+    padding-right: 10px;
 }
-/* Custom field value */
-/* مقدار فیلد سفارشی */
 .fb-cert-custom-fields-list .field-value {
-    flex: 1 1 calc(100% - 165px); /* Take remaining width / گرفتن عرض باقی‌مانده */
-    word-break: break-word; /* Break long words/URLs / شکستن کلمات/URL های طولانی */
+    flex: 1 1 calc(100% - 165px);
+    word-break: break-word;
     font-weight: 500;
     color: var(--fbc-pub-text);
 }
-/* Images within custom field values */
-/* تصاویر داخل مقادیر فیلد سفارشی */
 .fb-cert-custom-fields-list .field-value img {
-    max-width: 100%; /* Ensure image doesn't overflow / اطمینان از عدم سرریز تصویر */
-    max-height: 200px; /* Limit image height / محدود کردن ارتفاع تصویر */
-    height: auto; /* Maintain aspect ratio / حفظ نسبت ابعاد */
-    display: block; /* Remove extra space / حذف فضای اضافی */
+    max-width: 100%;
+    max-height: 200px;
+    height: auto;
+    display: block;
     border-radius: var(--fbc-pub-radius);
-    margin-top: 5px; /* Space above image / فاصله بالای تصویر */
+    margin-top: 5px;
 }
 
 /* === Download Button Area (Enhanced Styles) === */
 /* === ناحیه دکمه دانلود (استایل‌های بهبود یافته) === */
 .fb-cert-download-button-area {
-    margin-top: var(--fbc-pub-spacing-lg); /* Space above button area / فاصله بالای ناحیه دکمه */
-    padding-top: var(--fbc-pub-spacing); /* Padding above button / پدینگ بالای دکمه */
-    padding-bottom: var(--fbc-pub-spacing); /* Padding below button / پدینگ پایین دکمه */
-    border-top: 1px dashed var(--fbc-pub-border); /* Separator line / خط جدا کننده */
-    text-align: center; /* Center the button within the area / مرکز کردن دکمه داخل ناحیه */
+    margin-top: var(--fbc-pub-spacing-lg);
+    padding-top: var(--fbc-pub-spacing);
+    padding-bottom: var(--fbc-pub-spacing);
+    border-top: 1px dashed var(--fbc-pub-border);
+    text-align: center;
 }
-/* The download button link itself */
-/* خود لینک دکمه دانلود */
 .fb-cert-download-button.button {
-    display: inline-block; /* Required for text-align:center on parent / لازم برای text-align:center در والد */
-    text-decoration: none !important; /* Remove underline / حذف زیرخط */
-    font-size: 1.05em; /* Slightly larger text / متن کمی بزرگتر */
-    padding: 12px 30px; /* More padding / پدینگ بیشتر */
+    display: inline-block;
+    text-decoration: none !important;
+    font-size: 1.05em;
+    padding: 12px 30px;
     cursor: pointer;
     border-radius: var(--fbc-pub-radius);
-    color: #fff !important; /* Text always white / متن همیشه سفید */
-    border: none; /* Remove border / حذف حاشیه */
-    font-weight: 600; /* Slightly bolder text / متن کمی ضخیم‌تر */
+    color: #fff !important;
+    border: none;
+    font-weight: 600;
     text-align: center;
-    transition: all 0.25s ease-in-out; /* Smooth transition for all properties / انتقال نرم برای همه ویژگی‌ها */
-    box-shadow: 0 3px 6px rgba(0,0,0,0.1); /* Add shadow / افزودن سایه */
-    position: relative; /* Needed for pseudo-element icon / لازم برای آیکون شبه‌المان */
-    overflow: hidden; /* Helps with transitions/effects / کمک به انتقال‌ها/افکت‌ها */
-    /* Background color set inline via PHP / رنگ پس‌زمینه به صورت inline توسط PHP تنظیم می‌شود */
+    transition: all 0.25s ease-in-out;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
 }
-/* Add download icon using Dashicons font (RTL) */
-/* افزودن آیکون دانلود با استفاده از فونت Dashicons (RTL) */
 .fb-cert-download-button.button::before {
-    content: "\f316"; /* WordPress download icon code / کد آیکون دانلود وردپرس */
-    font-family: dashicons; /* Use WordPress icon font / استفاده از فونت آیکون وردپرس */
-    margin-left: 10px; /* Space after icon (RTL) / فاصله بعد از آیکون (RTL) */
-    vertical-align: -1px; /* Adjust vertical alignment / تنظیم تراز عمودی */
+    content: "\f316";
+    font-family: dashicons;
+    margin-right: 10px;
+    vertical-align: -1px;
     font-size: 1.1em;
     line-height: 1;
-    speak: never; /* Prevent screen readers from reading the icon code / جلوگیری از خوانده شدن کد آیکون توسط صفحه خوان */
-    -webkit-font-smoothing: antialiased; /* Improve font rendering / بهبود رندر فونت */
+    speak: never;
+    -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-/* Download button hover effect */
-/* افکت هاور دکمه دانلود */
 .fb-cert-download-button.button:hover {
-    opacity: 0.9; /* Slightly fade / کمی محو شدن */
-    box-shadow: 0 5px 10px rgba(0,0,0,0.15); /* Increase shadow / افزایش سایه */
-    transform: translateY(-2px); /* Slight upward movement / حرکت جزئی به بالا */
+    opacity: 0.9;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
 }
-/* Download button active (click) effect */
-/* افکت فعال (کلیک) دکمه دانلود */
 .fb-cert-download-button.button:active {
-     transform: translateY(0); /* Return to original position / بازگشت به موقعیت اصلی */
-     box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Smaller shadow / سایه کوچکتر */
+     transform: translateY(0);
+     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 /* --- Footer Area (Custom Text & QR Code) --- */
 /* --- ناحیه فوتر (متن دلخواه و کد QR) --- */
 .fb-cert-footer {
-    display: flex; /* Use flexbox / استفاده از flexbox */
-    justify-content: space-between; /* Space out text and QR / فاصله دادن بین متن و QR */
-    align-items: flex-end; /* Align items to the bottom / تراز آیتم‌ها به پایین */
-    gap: var(--fbc-pub-spacing-lg); /* Gap between text and QR / فاصله بین متن و QR */
-    padding-top: var(--fbc-pub-spacing); /* Space above footer content / فاصله بالای محتوای فوتر */
-    margin-top: var(--fbc-pub-spacing); /* Space above footer section / فاصله بالای بخش فوتر */
-    /* No top border here, handled by separator hr / بدون حاشیه بالایی در اینجا، توسط جدا کننده hr مدیریت می‌شود */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: var(--fbc-pub-spacing-lg);
+    padding-top: var(--fbc-pub-spacing);
+    margin-top: var(--fbc-pub-spacing);
 }
-/* Custom footer text container */
-/* کانتینر متن دلخواه فوتر */
 .fb-cert-footer-text {
-    flex-grow: 1; /* Allow text to take available space / اجازه دادن به متن برای گرفتن فضای موجود */
+    flex-grow: 1;
     color: var(--fbc-pub-text-light);
-    font-size: 0.95em; /* Slightly smaller text / متن کمی کوچکتر */
+    font-size: 0.95em;
     line-height: 1.7;
 }
 .fb-cert-footer-text p:last-child {
-    margin-bottom: 0; /* Remove margin on last paragraph / حذف مارجین در آخرین پاراگراف */
+    margin-bottom: 0;
 }
-
-/* QR code container in footer */
-/* کانتینر کد QR در فوتر */
 .fb-cert-footer-qr {
-    flex-shrink: 0; /* Prevent QR code from shrinking / جلوگیری از کوچک شدن کد QR */
-    text-align: left; /* Align QR code content left (useful for RTL context where overall is right) / تراز محتوای کد QR به چپ (مفید در زمینه RTL که کلیت راست است) */
+    flex-shrink: 0;
+    text-align: left;
 }
-/* Optional label for QR code (if added back) */
-/* برچسب اختیاری برای کد QR (اگر دوباره اضافه شود) */
 .fb-cert-footer-qr strong {
     display: block;
     margin-bottom: 5px;
@@ -386,53 +303,42 @@
     font-size: 0.9em;
     color: var(--fbc-pub-text-light);
 }
-/* QR code image */
-/* تصویر کد QR */
 .fb-cert-footer-qr img {
-    display: block; /* Remove extra space / حذف فضای اضافی */
-    border: 1px solid var(--fbc-pub-border); /* Add border / افزودن حاشیه */
-    padding: 4px; /* Padding around QR code / پدینگ دور کد QR */
-    background: #fff; /* White background behind QR / پس‌زمینه سفید پشت QR */
+    display: block;
+    border: 1px solid var(--fbc-pub-border);
+    padding: 4px;
+    background: #fff;
 }
-
-/* WP Footer Area (Edit Link) */
-/* ناحیه فوتر وردپرس (لینک ویرایش) */
 .fb-cert-wp-footer {
-    margin-top: var(--fbc-pub-spacing-lg); /* Space above WP footer / فاصله بالای فوتر وردپرس */
-    padding-top: var(--fbc-pub-spacing); /* Padding above WP footer / پدینگ بالای فوتر وردپرس */
-    border-top: 1px solid var(--fbc-pub-border); /* Separator line / خط جدا کننده */
-    text-align: left; /* Align edit link to the left (standard WP practice) / تراز لینک ویرایش به چپ (روال استاندارد وردپرس) */
-    font-size: 0.85em; /* Smaller text for edit link / متن کوچکتر برای لینک ویرایش */
+    margin-top: var(--fbc-pub-spacing-lg);
+    padding-top: var(--fbc-pub-spacing);
+    border-top: 1px solid var(--fbc-pub-border);
+    text-align: left;
+    font-size: 0.85em;
 }
 
 /* --- Messages & Back Link --- */
 /* --- پیام‌ها و لینک بازگشت --- */
-/* Not Found or Error Messages */
-/* پیام‌های یافت نشد یا خطا */
 .fb-cert-not-found,
 .fb-cert-error {
-    color: var(--fbc-pub-error); /* Error text color / رنگ متن خطا */
-    border: 1px solid #fdd; /* Light red border / حاشیه قرمز روشن */
-    padding: 15px 20px; /* Padding inside message box / پدینگ داخل کادر پیام */
-    margin-top: var(--fbc-pub-spacing); /* Space above message / فاصله بالای پیام */
+    color: var(--fbc-pub-error);
+    border: 1px solid #fdd;
+    padding: 15px 20px;
+    margin-top: var(--fbc-pub-spacing);
     border-radius: var(--fbc-pub-radius);
-    background-color: #fffafa; /* Very light red background / پس‌زمینه قرمز خیلی روشن */
-    border-right: 3px solid var(--fbc-pub-error); /* Accent border on the right (RTL) / حاشیه تاکیدی در سمت راست (RTL) */
+    background-color: #fffafa;
+    border-left: 3px solid var(--fbc-pub-error);
     font-weight: 500;
     font-size: 0.95em;
 }
-/* Remove pseudo-elements if they conflict */
-/* حذف شبه‌المان‌ها اگر تداخل ایجاد کنند */
 .fb-cert-not-found::before,
 .fb-cert-error::before {
     display: none;
 }
-/* "Back to Search" link style */
-/* استایل لینک "بازگشت به جستجو" */
 .fb-back-to-search {
     margin-top: var(--fbc-pub-spacing-lg);
     padding-top: var(--fbc-pub-spacing);
-    border-top: 1px solid var(--fbc-pub-border); /* Separator line / خط جدا کننده */
+    border-top: 1px solid var(--fbc-pub-border);
     font-size: 0.9em;
 }
 .fb-back-to-search a {
@@ -440,71 +346,61 @@
     color: var(--fbc-pub-text-light);
 }
 .fb-back-to-search a:hover {
-    color: var(--fbc-pub-accent); /* Accent color on hover / رنگ تاکیدی در هاور */
+    color: var(--fbc-pub-accent);
 }
 
 /* --- Responsiveness --- */
 /* --- واکنش‌گرایی --- */
 @media (max-width: 768px) {
-    /* On medium screens */
-    /* در صفحه‌های متوسط */
     .fb-cert-header {
-        flex-direction: column-reverse; /* Stack photo above title / قرار دادن عکس بالای عنوان */
-        align-items: flex-start; /* Align items to the start / تراز آیتم‌ها به ابتدا */
+        flex-direction: column-reverse;
+        align-items: flex-start;
     }
     .fb-cert-personal-photo {
-        width: 100px; height: 100px; /* Smaller photo / عکس کوچکتر */
-        margin-bottom: 15px; /* Space below photo / فاصله زیر عکس */
+        width: 100px; height: 100px;
+        margin-bottom: 15px;
     }
     .fb-cert-title .entry-title {
-        font-size: 1.6em; /* Smaller title / عنوان کوچکتر */
+        font-size: 1.6em;
     }
     .fb-cert-custom-fields-list li {
-        display: block; /* Stack label and value / قرار دادن برچسب و مقدار روی هم */
+        display: block;
     }
     .fb-cert-custom-fields-list .field-label {
-        display: block; /* Make label block / بلاک کردن برچسب */
-        margin-bottom: 3px; /* Space below label / فاصله زیر برچسب */
-        padding-left: 0; /* Remove padding / حذف پدینگ */
-        flex-basis: auto; /* Reset flex basis / ریست کردن flex basis */
+        display: block;
+        margin-bottom: 3px;
+        padding-right: 0;
+        flex-basis: auto;
     }
     .fb-cert-custom-fields-list .field-value {
-        display: block; /* Make value block / بلاک کردن مقدار */
-        flex-basis: auto; /* Reset flex basis / ریست کردن flex basis */
+        display: block;
+        flex-basis: auto;
     }
     .fb-cert-footer {
-        flex-direction: column; /* Stack footer elements / قرار دادن المان‌های فوتر روی هم */
-        align-items: flex-start; /* Align items start / تراز آیتم‌ها به ابتدا */
+        flex-direction: column;
+        align-items: flex-start;
     }
     .fb-cert-footer-qr {
-        margin-top: 15px; /* Space above QR code / فاصله بالای کد QR */
-        text-align: right; /* Align QR right (RTL) / تراز QR به راست (RTL) */
-        align-self: flex-start; /* Keep QR aligned start / نگه داشتن تراز QR به ابتدا */
+        margin-top: 15px;
+        text-align: left;
+        align-self: flex-start;
     }
     .fb-cert-footer-qr img {
-       /* No change needed here for alignment if text-align: right is on container */
-       /* نیازی به تغییر برای تراز در اینجا نیست اگر text-align: right روی کانتینر باشد */
     }
 }
 @media (max-width: 600px) {
-    /* On small screens */
-    /* در صفحه‌های کوچک */
     .fb-cert-lookup-form-container,
     .fb-cert-results-container,
     .fb-cert-single-container {
-        padding: var(--fbc-pub-spacing); /* Reduce padding / کاهش پدینگ */
-        margin: var(--fbc-pub-spacing) auto; /* Reduce margins / کاهش مارجین‌ها */
+        padding: var(--fbc-pub-spacing);
+        margin: var(--fbc-pub-spacing) auto;
     }
-    /* Make buttons full width */
-    /* تمام عرض کردن دکمه‌ها */
     .fb-cert-form-submit button,
-    .fb-cert-download-button.button { /* Target the link with button class / هدف‌گیری لینک با کلاس button */
+    .fb-cert-download-button.button {
         width: 100%;
-        padding: 12px; /* Adjust padding / تنظیم پدینگ */
+        padding: 12px;
         text-align: center;
     }
-     /* Further reduce heading sizes */
-     /* کاهش بیشتر اندازه عناوین */
      .fb-cert-single-container h1.entry-title,
      .fb-cert-results-container h2 {
          font-size: 1.4em;
@@ -512,8 +408,6 @@
      .fb-cert-body h3 {
          font-size: 1.1em;
      }
-    /* Smaller personal photo */
-    /* عکس پرسنلی کوچکتر */
     .fb-cert-personal-photo {
         width: 80px; height: 80px;
     }

@@ -4,50 +4,43 @@
 /* --- Variables (Using WP Colors where possible) --- */
 /* --- متغیرها (استفاده از رنگ‌های وردپرس در صورت امکان) --- */
 :root {
-    --fbc-admin-border: #dcdcde; /* WP default border color / رنگ حاشیه پیش‌فرض وردپرس */
-    --fbc-admin-bg: #f6f7f7;     /* WP subtle background / پس‌زمینه ملایم وردپرس */
-    --fbc-admin-bg-alt: #fff;    /* White background / پس‌زمینه سفید */
-    --fbc-admin-text: #1d2327;   /* WP main text color / رنگ متن اصلی وردپرس */
-    --fbc-admin-text-light: #50575e; /* WP secondary text color / رنگ متن ثانویه وردپرس */
-    --fbc-admin-accent: #2271b1; /* WP Blue / آبی وردپرس */
-    --fbc-admin-delete: #d63638; /* WP Red / قرمز وردپرس */
-    --fbc-admin-delete-hover: #a02728; /* Darker red for hover / قرمز تیره‌تر برای هاور */
-    --fbc-admin-radius: 3px;     /* WP Standard Radius / شعاع استاندارد وردپرس */
-    --fbc-admin-spacing: 15px;   /* Standard spacing / فاصله استاندارد */
-    --fbc-admin-spacing-sm: 10px; /* Smaller spacing / فاصله کوچکتر */
+    --fbc-admin-border: #dcdcde;
+    --fbc-admin-bg: #f6f7f7;
+    --fbc-admin-bg-alt: #fff;
+    --fbc-admin-text: #1d2327;
+    --fbc-admin-text-light: #50575e;
+    --fbc-admin-accent: #2271b1;
+    --fbc-admin-delete: #d63638;
+    --fbc-admin-delete-hover: #a02728;
+    --fbc-admin-radius: 3px;
+    --fbc-admin-spacing: 15px;
+    --fbc-admin-spacing-sm: 10px;
 }
 
 /* --- General Settings & Guide/About Page Wrapper --- */
 /* --- استایل‌های عمومی برای صفحه تنظیمات و راهنما/درباره ما --- */
 .fb-cert-settings-wrap,
 .fb-cert-guide-wrap,
-.fb-about-page-wrap { /* Added about wrap / اضافه کردن دربرگیرنده درباره ما */
-    /* font-family inherits from WP Admin / فونت از ادمین وردپرس به ارث برده می‌شود */
+.fb-about-page-wrap {
     color: var(--fbc-admin-text);
-    max-width: 1000px; /* Limit max width for readability / محدود کردن حداکثر عرض برای خوانایی */
+    max-width: 1000px;
 }
 .fb-cert-settings-wrap .nav-tab-wrapper {
-    margin-bottom: 25px; /* Space below tabs / فاصله زیر تب‌ها */
+    margin-bottom: 25px;
 }
-/* Section Headings (h2) */
-/* عناوین بخش‌ها (h2) */
 .fb-cert-settings-wrap h2,
 .fb-cert-guide-wrap h2,
 .fb-about-page-wrap h2 {
-    font-size: 1.15em; /* Slightly smaller than default h2 / کمی کوچکتر از h2 پیش‌فرض */
+    font-size: 1.15em;
     padding-bottom: 5px;
     border-bottom: 1px solid var(--fbc-admin-border);
     margin: 25px 0 var(--fbc-admin-spacing);
-    font-weight: 600; /* Make headings slightly bolder / کمی ضخیم‌تر کردن عناوین */
+    font-weight: 600;
 }
-/* Specific heading color for guide/about */
-/* رنگ عنوان خاص برای راهنما/درباره ما */
 .fb-cert-guide-wrap h2,
 .fb-about-page-wrap h2 {
     color: var(--fbc-admin-accent);
 }
-/* Subheadings (h3) */
-/* زیرعنوان‌ها (h3) */
 .fb-cert-settings-wrap h3,
 .fb-cert-guide-wrap h3,
 .fb-about-page-wrap h3 {
@@ -55,33 +48,24 @@
     margin: 20px 0 10px;
     font-weight: 600;
 }
-/* Paragraphs and List Items */
-/* پاراگراف‌ها و آیتم‌های لیست */
 .fb-cert-settings-wrap p,
 .fb-cert-guide-wrap p,
 .fb-cert-guide-wrap li,
 .fb-about-page-wrap p {
     line-height: 1.6;
-    font-size: 13px; /* Standard WP admin text size / اندازه متن استاندارد ادمین وردپرس */
+    font-size: 13px;
     color: var(--fbc-admin-text-light);
 }
-/* Strong text within guide/about */
-/* متن ضخیم داخل راهنما/درباره ما */
 .fb-cert-guide-wrap strong,
 .fb-about-page-wrap strong {
     color: var(--fbc-admin-text);
 }
-/* Lists in guide/about */
-/* لیست‌ها در راهنما/درباره ما */
 .fb-cert-guide-wrap ol, .fb-cert-guide-wrap ul {
     margin-bottom: 15px;
-    margin-right: 25px; /* Indentation for RTL / تورفتگی برای RTL */
-    /* For LTR, you would use margin-left / برای LTR، از margin-left استفاده می‌شود */
+    margin-left: 25px;
 }
-/* Code elements in guide/about */
-/* المان‌های کد در راهنما/درباره ما */
 .fb-cert-guide-wrap code {
-    background-color: #f0f0f1; /* WP code background color / رنگ پس‌زمینه کد وردپرس */
+    background-color: #f0f0f1;
     padding: 2px 5px;
     border-radius: 3px;
     font-size: 0.9em;
@@ -91,141 +75,119 @@
 /* --- Settings Form Table --- */
 /* --- جدول فرم تنظیمات --- */
 .fb-cert-settings-wrap .form-table th {
-    width: 190px; /* Fixed width for labels / عرض ثابت برای برچسب‌ها */
-    padding: var(--fbc-admin-spacing) 10px var(--fbc-admin-spacing) 0; /* Adjust padding / تنظیم پدینگ */
-    font-weight: 400; /* Normal font weight / ضخامت فونت نرمال */
-    vertical-align: top; /* Align label top / تراز کردن برچسب به بالا */
+    width: 190px;
+    padding: var(--fbc-admin-spacing) 10px var(--fbc-admin-spacing) 0;
+    font-weight: 400;
+    vertical-align: top;
 }
 .fb-cert-settings-wrap .form-table td {
     padding: var(--fbc-admin-spacing-sm) 10px;
-    vertical-align: top; /* Align content top / تراز کردن محتوا به بالا */
+    vertical-align: top;
 }
-/* Description text below fields */
-/* متن توضیحات زیر فیلدها */
 .fb-cert-settings-wrap .form-table td p.description {
     margin-top: 5px;
-    color: #646970; /* WP description text color / رنگ متن توضیحات وردپرس */
-    font-style: normal; /* Remove italic style / حذف استایل ایتالیک */
-    font-size: 12px; /* Smaller description text / متن توضیحات کوچکتر */
+    color: #646970;
+    font-style: normal;
+    font-size: 12px;
 }
-/* Standard input and select fields */
-/* فیلدهای ورودی و انتخاب استاندارد */
 .fb-cert-settings-wrap .regular-text,
 .fb-cert-settings-wrap select {
     width: 100%;
-    max-width: 400px; /* Limit width / محدود کردن عرض */
+    max-width: 400px;
 }
-/* Color picker input */
-/* ورودی انتخابگر رنگ */
 .fb-cert-settings-wrap input[type="text"].fb-cert-color-picker {
     max-width: 100px;
 }
-/* WP Editor wrapper */
-/* دربرگیرنده ویرایشگر وردپرس */
 .wp-editor-wrap {
     border: 1px solid var(--fbc-admin-border);
-    box-shadow: none; /* Remove default shadow / حذف سایه پیش‌فرض */
+    box-shadow: none;
 }
 
 /* --- Sortable Custom Fields (Settings Page) --- */
 /* --- فیلدهای سفارشی قابل مرتب‌سازی (صفحه تنظیمات) --- */
 #fb-cert-fields-container {
     margin-top: 10px;
-    border: none; /* No border on container / بدون حاشیه روی کانتینر */
-    background: transparent; /* Transparent background / پس‌زمینه شفاف */
+    border: none;
+    background: transparent;
 }
-
-/* Individual field row */
-/* ردیف فیلد تکی */
 .fb-cert-field-row {
-    display: flex; /* Use flexbox for alignment / استفاده از flexbox برای تراز */
-    align-items: center; /* Vertically center items / تراز عمودی آیتم‌ها */
+    display: flex;
+    align-items: center;
     background-color: var(--fbc-admin-bg-alt);
     border: 1px solid var(--fbc-admin-border);
     border-radius: var(--fbc-admin-radius);
-    margin-bottom: var(--fbc-admin-spacing-sm); /* Space between rows / فاصله بین ردیف‌ها */
-    padding: var(--fbc-admin-spacing-sm); /* Inner padding / پدینگ داخلی */
-    box-shadow: 0 1px 1px rgba(0,0,0,.04); /* Subtle shadow / سایه ملایم */
-    position: relative; /* For potential absolute positioning inside / برای موقعیت‌یابی absolute احتمالی در داخل */
+    margin-bottom: var(--fbc-admin-spacing-sm);
+    padding: var(--fbc-admin-spacing-sm);
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    position: relative;
 }
-
-/* Drag handle */
-/* دستگیره کشیدن */
 .fb-cert-drag-handle {
-    cursor: move; /* Indicate draggable / نشان دادن قابلیت کشیدن */
-    color: #9ca3af; /* Lighter handle color / رنگ دستگیره روشن‌تر */
+    cursor: move;
+    color: #9ca3af;
     padding: 5px var(--fbc-admin-spacing-sm);
-    margin-left: var(--fbc-admin-spacing-sm); /* Space after handle (RTL) / فاصله بعد از دستگیره (RTL) */
-    flex-shrink: 0; /* Prevent handle from shrinking / جلوگیری از کوچک شدن دستگیره */
+    margin-right: var(--fbc-admin-spacing-sm);
+    flex-shrink: 0;
 }
 .fb-cert-drag-handle:hover {
-    color: var(--fbc-admin-accent); /* Highlight on hover / هایلایت در هاور */
+    color: var(--fbc-admin-accent);
 }
-
-/* Container for field details (labels, type, key, inputs) */
-/* کانتینر برای جزئیات فیلد (برچسب‌ها، نوع، کلید، ورودی‌ها) */
 .fb-cert-field-details {
-     flex-grow: 1; /* Allow details to take up available space / اجازه دادن به جزئیات برای گرفتن فضای موجود */
-     padding: 0 var(--fbc-admin-spacing-sm); /* Space around details / فاصله دور جزئیات */
+     flex-grow: 1;
+     padding: 0 var(--fbc-admin-spacing-sm);
 }
-.fb-cert-field-details p { /* Style paragraphs within the details section / استایل پاراگراف‌ها داخل بخش جزئیات */
-    margin: 0 0 6px 0 !important; /* Consistent margin / مارجین یکنواخت */
+.fb-cert-field-details p {
+    margin: 0 0 6px 0 !important;
     padding: 0 !important;
     line-height: 1.4;
-    font-size: 13px; /* Standard admin font size / اندازه فونت استاندارد ادمین */
+    font-size: 13px;
 }
 .fb-cert-field-details p:last-of-type {
-    margin-bottom: 0 !important; /* Remove bottom margin on last p / حذف مارجین پایین در آخرین p */
+    margin-bottom: 0 !important;
 }
 .fb-cert-field-details p label {
-    margin-left: 5px; /* Space after label (RTL) / فاصله بعد از برچسب (RTL) */
+    margin-right: 5px;
     color: var(--fbc-admin-text-light);
 }
 .fb-cert-field-details p strong {
     color: var(--fbc-admin-text);
 }
-.fb-cert-field-details p code { /* Key name style / استایل نام کلیدی */
+.fb-cert-field-details p code {
     background-color: #f3f4f5;
     padding: 2px 5px;
     border-radius: 3px;
     font-size: 12px;
     border: 1px solid #e5e5e5;
-    direction: ltr; /* Ensure key is LTR / اطمینان از LTR بودن کلید */
-    display: inline-block; /* Prevent breaking / جلوگیری از شکستن */
+    direction: ltr;
+    display: inline-block;
 }
-.fb-cert-field-details p input[type="text"]{ /* Label input / ورودی برچسب */
+.fb-cert-field-details p input[type="text"]{
     width: 95%;
     max-width: 260px;
     margin-top: 1px;
     font-size: 13px;
     padding: 4px 6px;
 }
-.fb-cert-field-details p input[type="checkbox"] { /* is_key checkbox / چک‌باکس is_key */
-    margin-left: 4px;
-    margin-right: 0; /* Adjust for RTL / تنظیم برای RTL */
-    vertical-align: middle; /* Align checkbox nicely / تراز زیبای چک‌باکس */
+.fb-cert-field-details p input[type="checkbox"] {
+    margin-right: 4px;
+    margin-left: 0;
+    vertical-align: middle;
 }
-
-/* Container for action buttons (Delete) */
-/* کانتینر برای دکمه‌های عملیات (حذف) */
 .fb-cert-field-actions {
-    flex-shrink: 0; /* Prevent shrinking / جلوگیری از کوچک شدن */
-    margin-right: auto; /* Push to the far end (Left in RTL) / فشار دادن به انتهای دور (چپ در RTL) */
-    padding-right: var(--fbc-admin-spacing-sm); /* Space before button / فاصله قبل از دکمه */
+    flex-shrink: 0;
+    margin-left: auto;
+    padding-left: var(--fbc-admin-spacing-sm);
 }
-/* Delete button style */
-/* استایل دکمه حذف */
 .fb-cert-field-row .button-link-delete {
     padding: 5px !important;
     color: var(--fbc-admin-delete) !important;
     background: none !important;
     border: none !important;
-    box-shadow: none !important; /* Remove WP button shadow / حذف سایه دکمه وردپرس */
+    box-shadow: none !important;
     cursor: pointer;
     line-height: 1;
-    vertical-align: middle; /* Align with other elements / تراز با سایر المان‌ها */
+    vertical-align: middle;
 }
-.fb-cert-field-row .button-link-delete .dashicons { /* Trash icon / آیکون سطل زباله */
+.fb-cert-field-row .button-link-delete .dashicons {
     font-size: 18px;
     vertical-align: middle;
     line-height: 1;
@@ -235,14 +197,13 @@
     background-color: transparent !important;
 }
 
-
 /* Placeholder style during drag & drop */
 /* استایل جایگزین هنگام کشیدن و رها کردن */
 .fb-cert-field-placeholder {
     border: 1px dashed var(--fbc-admin-border);
     background-color: #fdfdfd;
     margin-bottom: var(--fbc-admin-spacing-sm);
-    height: 60px; /* Placeholder height / ارتفاع جایگزین */
+    height: 60px;
     border-radius: var(--fbc-admin-radius);
 }
 
@@ -260,11 +221,11 @@
     font-size: 1.1em;
 }
 .fb-add-new-field-section label {
-    margin-left: 10px; /* Space after label (RTL) / فاصله بعد از برچسب (RTL) */
+    margin-right: 10px;
 }
 .fb-add-new-field-section select {
     min-width: 150px;
-    margin-left: 10px; /* Space after select (RTL) / فاصله بعد از انتخاب (RTL) */
+    margin-right: 10px;
 }
 
 /* --- Import/Export Section --- */
@@ -291,62 +252,14 @@
 
 /* --- Metabox Styles (Edit Certificate Screen) --- */
 /* --- استایل‌های متاباکس (صفحه ویرایش مدرک) --- */
-/* Adjust padding inside metaboxes */
-/* تنظیم پدینگ داخل متاباکس‌ها */
-#fb_certificate_main_data_metabox .inside,
-#fb_certificate_file_metabox .inside {
-    padding: 5px 12px 12px !important; /* Override default padding / بازنویسی پدینگ پیش‌فرض */
-    margin: 0 !important;
-}
-#fb_certificate_main_data_metabox table.form-table {
-    margin-top: 0; /* Remove top margin / حذف مارجین بالا */
-}
-#fb_certificate_main_data_metabox table.form-table th,
-#fb_certificate_main_data_metabox table.form-table td {
-    padding: 8px 0; /* Reduce vertical padding / کاهش پدینگ عمودی */
-}
-/* Image uploader preview and file display */
-/* پیش‌نمایش آپلودر تصویر و نمایش فایل */
-.fb-cert-image-uploader img,
-.fb-current-file-display {
-    margin-bottom: 8px;
-    display: block; /* Ensure block display / اطمینان از نمایش بلاک */
-}
-/* Image preview style */
-/* استایل پیش‌نمایش تصویر */
 .fb-cert-image-uploader img {
-    max-width: 150px;
-    height: auto;
-    border: 1px solid var(--fbc-admin-border);
-    padding: 3px;
-    background-color: #fdfdfd;
-    border-radius: var(--fbc-admin-radius);
-    vertical-align: middle; /* Align with buttons / تراز با دکمه‌ها */
+    margin-left: 10px;
 }
-/* Current file display style */
-/* استایل نمایش فایل فعلی */
-.fb-current-file-display {
-    background-color: var(--fbc-admin-bg);
-    padding: 6px 10px;
-    border-radius: var(--fbc-admin-radius);
-    font-size: 0.9em;
-    border: 1px solid var(--fbc-admin-border);
-}
-.fb-current-file-display a {
-    word-break: break-all; /* Prevent long filenames from breaking layout / جلوگیری از شکستن طرح توسط نام‌های طولانی فایل */
-    margin-right: 5px; /* Space before link (RTL) / فاصله قبل از لینک (RTL) */
-}
-/* Buttons within uploaders */
-/* دکمه‌ها داخل آپلودرها */
 .fb-cert-file-uploader button,
 .fb-cert-image-uploader button {
-    margin-left: 5px; /* Space after button (RTL) / فاصله بعد از دکمه (RTL) */
+    margin-right: 5px;
     vertical-align: middle;
 }
-/* Remove button specific style (Red) */
-/* استایل خاص دکمه حذف (قرمز) */
-/* Note: JS uses .fb-remove-button, use that class */
-/* نکته: JS از .fb-remove-button استفاده می‌کند، از آن کلاس استفاده کنید */
 .fb-cert-file-uploader .button.fb-remove-button,
 .fb-cert-image-uploader .button.fb-remove-button {
     color: var(--fbc-admin-delete);
@@ -362,31 +275,27 @@
 /* --- Admin Columns (QR Code in Certificate List) --- */
 /* --- ستون‌های ادمین (کد QR در لیست مدرک‌ها) --- */
 .column-fb_qr_code {
-    width: 90px; /* Fixed width for the column / عرض ثابت برای ستون */
-    text-align: center !important; /* Center align content / تراز محتوا به مرکز */
-    vertical-align: middle !important; /* Vertically align content / تراز عمودی محتوا */
+    width: 90px;
+    text-align: center !important;
+    vertical-align: middle !important;
 }
-.column-fb_qr_code img { /* QR code image style / استایل تصویر کد QR */
+.column-fb_qr_code img {
     display: block;
-    margin: 0 auto; /* Center the image / مرکز کردن تصویر */
+    margin: 0 auto;
     border: 1px solid var(--fbc-admin-border);
     padding: 1px;
     background: #fff;
-    max-width: 100%; /* Ensure image fits column / اطمینان از جا شدن تصویر در ستون */
-    height: auto; /* Maintain aspect ratio / حفظ نسبت ابعاد */
-    box-sizing: border-box; /* Include padding/border in width / شامل کردن پدینگ/حاشیه در عرض */
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
 }
 
 /* --- Guide & About Page Specific Styles --- */
 /* --- استایل‌های خاص صفحه راهنما و درباره ما --- */
-/* Logo style on about page */
-/* استایل لوگو در صفحه درباره ما */
 .fb-about-logo {
     max-width: 160px;
     margin-bottom: 20px;
 }
-/* Social icons container and links */
-/* کانتینر و لینک‌های آیکون‌های اجتماعی */
 .fb-social-icons a {
     display: inline-block;
     margin: 4px 6px;
@@ -394,61 +303,47 @@
     transition: opacity 0.2s ease;
 }
 .fb-social-icons a:hover {
-    opacity: 1; /* Full opacity on hover / شفافیت کامل در هاور */
+    opacity: 1;
 }
-/* Social icon image */
-/* تصویر آیکون اجتماعی */
 .fb-social-icon {
     width: 28px;
     height: 28px;
     vertical-align: middle;
 }
-/* Sections on about page */
-/* بخش‌ها در صفحه درباره ما */
 .fb-about-section {
     margin-bottom: 20px;
     padding-bottom: 15px;
     border-bottom: 1px solid #eee;
 }
 .fb-about-section:last-child {
-    border-bottom: none; /* Remove border on last section / حذف حاشیه در آخرین بخش */
+    border-bottom: none;
     padding-bottom: 0;
 }
 
-
 /* --- Click-to-Copy Shortcode Styles (Guide Page) --- */
 /* --- استایل‌های کپی شورت‌کد با کلیک (صفحه راهنما) --- */
-/* Wrapper for the code and button (if needed) */
-/* دربرگیرنده برای کد و دکمه (در صورت نیاز) */
-.fb-cert-guide-wrap .fb-shortcode-copy-wrapper { /* Target within guide page / هدف‌گیری داخل صفحه راهنما */
+.fb-cert-guide-wrap .fb-shortcode-copy-wrapper {
     display: inline-block;
-    position: relative; /* For potential tooltip positioning / برای موقعیت‌یابی احتمالی تولتیپ */
+    position: relative;
     margin: 5px 0;
 }
-
-/* The code element itself */
-/* خود المان کد */
-.fb-cert-guide-wrap code.fb-shortcode-to-copy { /* Style the specific code element / استایل المان کد خاص */
+.fb-cert-guide-wrap code.fb-shortcode-to-copy {
     display: inline-block;
     padding: 6px 12px;
-    background-color: #e0e5eb; /* Lighter grey background / پس‌زمینه خاکستری روشن‌تر */
-    border: 1px solid #c0c8d1; /* Subtle border / حاشیه ملایم */
+    background-color: #e0e5eb;
+    border: 1px solid #c0c8d1;
     border-radius: 4px;
-    font-family: Consolas, Monaco, monospace; /* Monospace font / فونت Monospace */
+    font-family: Consolas, Monaco, monospace;
     font-size: 1.1em;
-    color: #3c434a; /* Dark grey text / متن خاکستری تیره */
-    cursor: pointer; /* Indicate clickable / نشان دادن قابلیت کلیک */
-    direction: ltr; /* Ensure LTR for the shortcode itself / اطمینان از LTR بودن خود شورت‌کد */
-    user-select: all; /* Allow user to select text / اجازه دادن به کاربر برای انتخاب متن */
+    color: #3c434a;
+    cursor: pointer;
+    direction: ltr;
+    user-select: all;
     -webkit-user-select: all;
     -moz-user-select: all;
     transition: background-color 0.2s ease, border-color 0.2s ease;
 }
-/* Hover effect for the code */
-/* افکت هاور برای کد */
 .fb-cert-guide-wrap code.fb-shortcode-to-copy:hover {
     background-color: #d4dbe3;
     border-color: #aab5c3;
 }
-/* Copy button and feedback styles are already within the guide page section */
-/* استایل‌های دکمه کپی و فیدبک در حال حاضر داخل بخش صفحه راهنما هستند */

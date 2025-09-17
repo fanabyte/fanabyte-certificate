@@ -1,0 +1,120 @@
+/* === Fanabyte Certificate - RTL Styles v1.3.0 === */
+/* === استایل‌های راست به چپ افزونه Certificate فنابایت نسخه ۱.۳.۰ === */
+
+.fb-cert-settings-wrap,
+.fb-cert-guide-wrap,
+.fb-about-page-wrap {
+    direction: rtl;
+}
+.fb-cert-settings-wrap .form-table th {
+    padding: var(--fbc-admin-spacing) 0 var(--fbc-admin-spacing) 10px;
+}
+.fb-cert-field-row {
+    direction: rtl;
+}
+.fb-cert-drag-handle {
+    margin-right: 0;
+    margin-left: var(--fbc-admin-spacing-sm);
+}
+.fb-cert-field-details p label {
+    margin-right: 0;
+    margin-left: 5px;
+}
+.fb-cert-field-details p input[type="checkbox"] {
+    margin-right: 0;
+    margin-left: 4px;
+}
+.fb-cert-field-actions {
+    margin-left: 0;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: var(--fbc-admin-spacing-sm);
+}
+.fb-cert-image-uploader img {
+    margin-left: 0;
+    margin-right: 10px;
+}
+.fb-cert-file-uploader button,
+.fb-cert-image-uploader button {
+    margin-right: 0;
+    margin-left: 5px;
+}
+.fb-cert-import-export-section {
+    direction: rtl;
+}
+.fb-add-new-field-section {
+    direction: rtl;
+}
+.fb-add-new-field-section label {
+    margin-right: 0;
+    margin-left: 10px;
+}
+.fb-add-new-field-section select {
+    margin-right: 0;
+    margin-left: 10px;
+}
+.fb-cert-guide-wrap ol, .fb-cert-guide-wrap ul {
+    margin-left: 0;
+    margin-right: 25px;
+}
+
+/* Public Styles RTL */
+.fb-cert-lookup-form-container,
+.fb-cert-results-container,
+.fb-cert-single-container {
+    direction: rtl;
+    text-align: right;
+}
+.fb-cert-results-list li a::before {
+    margin-right: 0;
+    margin-left: 8px;
+    content: "\203A";
+}
+.fb-cert-personal-photo {
+    margin-right: 0;
+    margin-left: 20px;
+}
+.fb-cert-footer {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+.fb-cert-footer-qr {
+    text-align: left;
+}
+.fb-cert-footer-text {
+    flex-grow: 1;
+    text-align: right;
+}
+.fb-cert-footer-qr img {
+    /* Align QR to the left in RTL context */
+    margin-right: auto;
+}
+.fb-cert-custom-fields-list .field-label {
+    padding-left: 0;
+    padding-right: 10px;
+}
+.fb-cert-not-found,
+.fb-cert-error {
+    border-left: none;
+    border-right: 3px solid var(--fbc-pub-error);
+}
+.fb-cert-wp-footer {
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .fb-cert-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .fb-cert-footer-qr {
+        margin-top: 15px;
+        text-align: right;
+        align-self: flex-start;
+    }
+}
+@media (max-width: 600px) {
+    .fb-cert-footer-qr img {
+        /* No change needed here if text-align: right is on container */
+    }
+}
