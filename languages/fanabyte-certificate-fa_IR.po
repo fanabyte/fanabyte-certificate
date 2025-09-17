@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: FanaByte - Certificate\n"
-"POT-Creation-Date: 2025-05-06 02:27+0330\n"
-"PO-Revision-Date: 2025-05-06 02:28+0330\n"
+"POT-Creation-Date: 2025-09-17 14:49+0330\n"
+"PO-Revision-Date: 2025-09-17 14:56+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -21,57 +21,108 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
+#: fanabyte-certificate.php:119 includes/admin-settings.php:424
+#: includes/admin-settings.php:458
+msgid "Field Type:"
+msgstr "نوع فیلد:"
+
+#: fanabyte-certificate.php:120 includes/admin-settings.php:426
+msgid "Key Name:"
+msgstr "نام کلیدی (Key):"
+
+#: fanabyte-certificate.php:121 includes/admin-settings.php:430
+msgid "Field Label:"
+msgstr "عنوان فیلد:"
+
+#: fanabyte-certificate.php:122 includes/admin-settings.php:437
+msgid "Key field for search?"
+msgstr "فیلد کلیدی برای جستجو؟"
+
+#: fanabyte-certificate.php:123 includes/admin-settings.php:420
+msgid "Drag to reorder"
+msgstr "جابجا کنید"
+
+#: fanabyte-certificate.php:124 includes/admin-settings.php:447
+#: includes/admin-settings.php:969
+msgid "Delete"
+msgstr "حذف"
+
+#: fanabyte-certificate.php:125
+msgid "Are you sure you want to delete this field?"
+msgstr "آیا از حذف این فیلد مطمئن هستید؟"
+
+#: fanabyte-certificate.php:128 includes/admin-metaboxes.php:144
+msgid "Select or Upload"
+msgstr "انتخاب یا آپلود"
+
+#: fanabyte-certificate.php:129 includes/admin-metaboxes.php:145
+msgid "Use this file"
+msgstr "استفاده از این فایل"
+
+#: fanabyte-certificate.php:130 includes/admin-metaboxes.php:146
+#: includes/admin-metaboxes.php:227
+msgid "Current file:"
+msgstr "فایل فعلی:"
+
+#: fanabyte-certificate.php:133 includes/admin-settings.php:1026
+msgid "Copied!"
+msgstr "کپی شد!"
+
+#: fanabyte-certificate.php:134
+msgid "Error copying code!"
+msgstr "خطا در کپی کردن کد!"
+
 #: includes/admin-columns.php:34 includes/admin-columns.php:41
 #: includes/admin-columns.php:159
 msgid "QR Code"
 msgstr "کد QR"
 
-#: includes/admin-metaboxes.php:27 includes/admin-settings.php:879
-#: includes/admin-settings.php:931 includes/admin-settings.php:1446
+#: includes/admin-metaboxes.php:29 includes/admin-settings.php:641
+#: includes/admin-settings.php:674 includes/admin-settings.php:1007
 msgid "Certificate Information & Details"
 msgstr "اطلاعات و جزئیات مدرک"
 
-#: includes/admin-metaboxes.php:28 includes/admin-settings.php:905
-#: includes/admin-settings.php:933 includes/admin-settings.php:1447
+#: includes/admin-metaboxes.php:30 includes/admin-settings.php:657
+#: includes/admin-settings.php:676 includes/admin-settings.php:1008
 msgid "Main Certificate File (PDF/Image)"
 msgstr "فایل اصلی مدرک (PDF/Image)"
 
-#: includes/admin-metaboxes.php:75 includes/admin-settings.php:892
-#: includes/admin-settings.php:932
+#: includes/admin-metaboxes.php:68 includes/admin-settings.php:649
+#: includes/admin-settings.php:675
 msgid "Personal Photo (Optional)"
 msgstr "تصویر پرسنلی (اختیاری)"
 
-#: includes/admin-metaboxes.php:84
+#: includes/admin-metaboxes.php:75
 msgid "Custom Fields"
 msgstr "فیلدهای سفارشی"
 
-#: includes/admin-metaboxes.php:93
+#: includes/admin-metaboxes.php:79
 msgid "Untitled"
 msgstr "بدون عنوان"
 
-#: includes/admin-metaboxes.php:122 includes/admin-metaboxes.php:162
+#: includes/admin-metaboxes.php:96 includes/admin-metaboxes.php:120
 msgid "Select/Upload Image"
 msgstr "انتخاب/آپلود تصویر"
 
-#: includes/admin-metaboxes.php:125 includes/admin-metaboxes.php:163
-#: includes/admin-metaboxes.php:340
+#: includes/admin-metaboxes.php:97 includes/admin-metaboxes.php:121
+#: includes/admin-metaboxes.php:235
 msgid "Remove"
 msgstr "حذف"
 
-#: includes/admin-metaboxes.php:141
+#: includes/admin-metaboxes.php:106
 #, php-format
 msgid "To add information, first define the desired fields on the %s page."
 msgstr "برای افزودن اطلاعات، ابتدا فیلدهای مورد نظر را در صفحه %s تعریف کنید."
 
-#: includes/admin-metaboxes.php:142
+#: includes/admin-metaboxes.php:107
 msgid "Certificates -> Settings -> Field Management"
 msgstr "استعلام مدرک -> تنظیمات -> مدیریت فیلدها"
 
-#: includes/admin-metaboxes.php:151
+#: includes/admin-metaboxes.php:113
 msgid "Select Image:"
 msgstr "انتخاب تصویر:"
 
-#: includes/admin-metaboxes.php:166
+#: includes/admin-metaboxes.php:122
 msgid ""
 "Select a square image to display next to the title (allowed formats: jpg, jpeg, "
 "png)."
@@ -79,94 +130,87 @@ msgstr ""
 "یک تصویر مربعی برای نمایش در کنار عنوان انتخاب کنید (فرمت‌های مجاز: jpg, jpeg, "
 "png)."
 
-#: includes/admin-metaboxes.php:173
+#: includes/admin-metaboxes.php:127
 msgid "Custom Footer Text (Optional)"
 msgstr "متن دلخواه پایین صفحه (اختیاری)"
 
-#: includes/admin-metaboxes.php:175
+#: includes/admin-metaboxes.php:129
 msgid "Enter text:"
 msgstr "متن مورد نظر:"
 
-#: includes/admin-metaboxes.php:183
+#: includes/admin-metaboxes.php:133
 msgid ""
 "This text will be displayed at the bottom of the page (in the footer section, "
 "right side)."
 msgstr "این متن در پایین صفحه (در بخش فوتر، سمت راست) نمایش داده خواهد شد."
 
-#: includes/admin-metaboxes.php:201
-msgid "Select or Upload"
-msgstr "انتخاب یا آپلود"
-
-#: includes/admin-metaboxes.php:202
-msgid "Use this file"
-msgstr "استفاده از این فایل"
-
-#: includes/admin-metaboxes.php:234 includes/admin-metaboxes.php:326
-msgid "Current file:"
-msgstr "فایل فعلی:"
-
-#: includes/admin-metaboxes.php:336
+#: includes/admin-metaboxes.php:233
 msgid "Select/Upload File"
 msgstr "انتخاب/آپلود فایل"
 
-#: includes/admin-metaboxes.php:344
+#: includes/admin-metaboxes.php:237
 msgid "The main PDF or image file of the certificate."
 msgstr "فایل PDF یا تصویر اصلی مدرک."
 
-#: includes/admin-settings.php:24
+#: includes/admin-settings.php:17
 msgid "FanaByte Certificates"
 msgstr "مدرک‌های فنابایت"
 
-#: includes/admin-settings.php:25
+#: includes/admin-settings.php:18
 msgid "Certificate Inquiry"
 msgstr "استعلام مدرک"
 
-#: includes/admin-settings.php:37
+#: includes/admin-settings.php:28
 msgid "Certificate Inquiry Settings"
 msgstr "تنظیمات استعلام مدرک"
 
-#: includes/admin-settings.php:38
+#: includes/admin-settings.php:29
 msgid "Settings"
 msgstr "تنظیمات"
 
-#: includes/admin-settings.php:48
+#: includes/admin-settings.php:37
 msgid "Plugin Usage Guide"
 msgstr "راهنمای استفاده از افزونه"
 
-#: includes/admin-settings.php:49
+#: includes/admin-settings.php:38
 msgid "Usage Guide"
 msgstr "راهنمای استفاده"
 
-#: includes/admin-settings.php:59
+#: includes/admin-settings.php:46
 msgid "About the Plugin"
 msgstr "درباره افزونه"
 
-#: includes/admin-settings.php:60 includes/admin-settings.php:1502
+#: includes/admin-settings.php:47 includes/admin-settings.php:1054
 msgid "About Us"
 msgstr "درباره ما"
 
-#: includes/admin-settings.php:90
+#: includes/admin-settings.php:56 includes/admin-settings.php:57
+#: includes/admin-settings.php:136 includes/admin-settings.php:386
+msgid "Plugin Language"
+msgstr "زبان افزونه"
+
+#: includes/admin-settings.php:81
 msgid "Field Management"
 msgstr "مدیریت فیلدها"
 
-#: includes/admin-settings.php:91
+#: includes/admin-settings.php:82
 msgid "Form/URL/Buttons Settings"
 msgstr "تنظیمات فرم/URL/دکمه‌ها"
 
-#: includes/admin-settings.php:92 includes/admin-settings.php:1490
+#: includes/admin-settings.php:83 includes/admin-settings.php:1044
 msgid "Import/Export"
 msgstr "واردات/صادرات"
 
-#: includes/admin-settings.php:109 includes/admin-settings.php:1405
-#: includes/admin-settings.php:1436
+#: includes/admin-settings.php:96 includes/admin-settings.php:141
+#: includes/admin-settings.php:970 includes/admin-settings.php:999
 msgid "Save Settings"
 msgstr "ذخیره تنظیمات"
 
-#: includes/admin-settings.php:117
+#: includes/admin-settings.php:102
 msgid "Export Settings"
 msgstr "خروجی گرفتن از تنظیمات"
 
-#: includes/admin-settings.php:118
+#: includes/admin-settings.php:103
 msgid ""
 "Click the button below to export the current plugin settings (fields and form/"
 "URL/button settings) as a JSON file."
@@ -174,15 +218,15 @@ msgstr ""
 "برای گرفتن خروجی از تنظیمات فعلی افزونه (فیلدها و تنظیمات فرم/URL/دکمه‌ها) به "
 "عنوان یک فایل JSON روی دکمه زیر کلیک کنید."
 
-#: includes/admin-settings.php:122 includes/admin-settings.php:1491
+#: includes/admin-settings.php:107 includes/admin-settings.php:1045
 msgid "Download Export File (JSON)"
 msgstr "دریافت فایل خروجی (JSON)"
 
-#: includes/admin-settings.php:127
+#: includes/admin-settings.php:112
 msgid "Import Settings"
 msgstr "وارد کردن تنظیمات"
 
-#: includes/admin-settings.php:128
+#: includes/admin-settings.php:113
 msgid ""
 "Select the JSON settings file you previously exported and upload it here. Note: "
 "This will overwrite your current settings."
@@ -190,11 +234,11 @@ msgstr ""
 "فایل تنظیمات (با فرمت JSON) که قبلا خروجی گرفته‌اید را انتخاب و بارگذاری کنید. "
 "توجه: تنظیمات فعلی بازنویسی خواهند شد."
 
-#: includes/admin-settings.php:133
+#: includes/admin-settings.php:118
 msgid "Select JSON file:"
 msgstr "انتخاب فایل JSON:"
 
-#: includes/admin-settings.php:136 includes/admin-settings.php:1492
+#: includes/admin-settings.php:121 includes/admin-settings.php:1046
 msgid "Upload and Import Settings"
 msgstr "بارگذاری و درون‌ریزی تنظیمات"
 
@@ -202,19 +246,19 @@ msgstr "بارگذاری و درون‌ریزی تنظیمات"
 msgid "About the Plugin and FanaByte Academy"
 msgstr "درباره افزونه و آکادمی فنابایت"
 
-#: includes/admin-settings.php:175
+#: includes/admin-settings.php:174
 msgid "This plugin was designed and developed by FanaByte Academy."
 msgstr "این افزونه توسط آکادمی فنابایت طراحی و توسعه داده شده است."
 
-#: includes/admin-settings.php:180
+#: includes/admin-settings.php:178
 msgid "FanaByte Academy Logo"
 msgstr "لوگو آکادمی فنابایت"
 
-#: includes/admin-settings.php:189
+#: includes/admin-settings.php:185
 msgid "The FanaByte Story"
 msgstr "داستان فنابایت"
 
-#: includes/admin-settings.php:191
+#: includes/admin-settings.php:187
 msgid ""
 "We started in 1400 (Persian calendar), or more accurately, since 1390. In the "
 "beginning, we didn't have an official website. FanaByte's goal is to help "
@@ -223,7 +267,7 @@ msgstr ""
 "از سال 1400 شروع به‌کار کردیم البته دقیق‌تر از سال 1390 اون اوایل وبسایت رسمی "
 "نداشتیم، هدف فنابایت کمک به همه افراد برای ساخت یک کسب‌و‌کار اینترنتی موفق است."
 
-#: includes/admin-settings.php:192
+#: includes/admin-settings.php:188
 #, php-format
 msgid ""
 "But how? At FanaByte, we teach you how to set up and use the world's best "
@@ -232,7 +276,7 @@ msgstr ""
 "اما چطور؟ ما در فنابایت نحوه راه اندازی و استفاده از بهترین سایت‌ساز دنیا را که "
 "بیش از 40% o درصد وب‌سایت های دنیا از آن استفاده می‌کنند را به شما می‌آموزیم."
 
-#: includes/admin-settings.php:193
+#: includes/admin-settings.php:189
 msgid ""
 "We have also published many free articles and video tutorials, as well as "
 "several training packages in various fields, which you can use to increase your "
@@ -242,55 +286,55 @@ msgstr ""
 "مختلف منتشر کرده‌ایم، که میتوانید از آنها در جهت افزایش علم و توسعه کسب و کار "
 "خود استفاده کنید."
 
-#: includes/admin-settings.php:200
+#: includes/admin-settings.php:194
 msgid "Follow Us!"
 msgstr "ما را دنبال کنید!"
 
-#: includes/admin-settings.php:201
+#: includes/admin-settings.php:195
 msgid "Please follow us on social media:"
 msgstr "لطفا ما را در شبکه‌های اجتماعی دنبال کنید:"
 
-#: includes/admin-settings.php:209
+#: includes/admin-settings.php:200
 msgid "FanaByte YouTube"
 msgstr "یوتیوب فنابایت"
 
-#: includes/admin-settings.php:210
+#: includes/admin-settings.php:201
 msgid "FanaByte Instagram"
 msgstr "اینستاگرام فنابایت"
 
-#: includes/admin-settings.php:211
+#: includes/admin-settings.php:202
 msgid "FanaByte Threads"
 msgstr "تردز فنابایت"
 
-#: includes/admin-settings.php:212
+#: includes/admin-settings.php:203
 msgid "FanaByte Facebook"
 msgstr "فیسبوک فنابایت"
 
-#: includes/admin-settings.php:213
+#: includes/admin-settings.php:204
 msgid "FanaByte GitHub"
 msgstr "گیت‌هاب فنابایت"
 
-#: includes/admin-settings.php:214
+#: includes/admin-settings.php:205
 msgid "FanaByte LinkedIn"
 msgstr "لینکدین فنابایت"
 
-#: includes/admin-settings.php:215
+#: includes/admin-settings.php:206
 msgid "FanaByte X (Twitter)"
 msgstr "ایکس (توییتر) فنابایت"
 
-#: includes/admin-settings.php:216
+#: includes/admin-settings.php:207
 msgid "FanaByte Telegram"
 msgstr "تلگرام فنابایت"
 
-#: includes/admin-settings.php:217
+#: includes/admin-settings.php:208
 msgid "FanaByte Pinterest"
 msgstr "پینترست فنابایت"
 
-#: includes/admin-settings.php:218
+#: includes/admin-settings.php:209
 msgid "FanaByte Email"
 msgstr "ایمیل فنابایت"
 
-#: includes/admin-settings.php:233
+#: includes/admin-settings.php:223
 msgid ""
 "If you enjoy this plugin and find it useful, please consider supporting its "
 "development by buying us a coffee. Your support is greatly appreciated!"
@@ -298,88 +342,92 @@ msgstr ""
 "اگر از این افزونه لذت می‌برید و برای شما مفید است، لطفاً با خرید یک قهوه از توسعه "
 "آن حمایت کنید. حمایت شما برای ما بسیار ارزشمند است!"
 
-#: includes/admin-settings.php:235
+#: includes/admin-settings.php:225
 msgid "Support FanaByte on Coffeete"
 msgstr "حمایت از فنابایت در کافیته"
 
-#: includes/admin-settings.php:242
+#: includes/admin-settings.php:231
 msgid "Visit FanaByte Academy Website"
 msgstr "مشاهده وب‌سایت آکادمی فنابایت"
 
-#: includes/admin-settings.php:246
+#: includes/admin-settings.php:235
 #, php-format
 msgid "Error: Image path not found (%s)."
 msgstr "خطا: مسیر تصاویر یافت نشد (%s)."
 
-#: includes/admin-settings.php:272
+#: includes/admin-settings.php:255
 msgid "Certificate Fields"
 msgstr "فیلدهای مدرک"
 
-#: includes/admin-settings.php:280
+#: includes/admin-settings.php:261
 msgid "Defined Fields"
 msgstr "فیلدهای تعریف شده"
 
-#: includes/admin-settings.php:298
+#: includes/admin-settings.php:275
 msgid "1. Inquiry Form Customization"
 msgstr "1. شخصی‌سازی فرم استعلام"
 
-#: includes/admin-settings.php:306
+#: includes/admin-settings.php:281
 msgid "Text Above Inquiry Form"
 msgstr "متن بالای فرم استعلام"
 
-#: includes/admin-settings.php:315
+#: includes/admin-settings.php:288
 msgid "Search Button Text"
 msgstr "متن دکمه جستجو"
 
-#: includes/admin-settings.php:324
+#: includes/admin-settings.php:295
 msgid "Search Button Color"
 msgstr "رنگ دکمه جستجو"
 
-#: includes/admin-settings.php:333
+#: includes/admin-settings.php:302
 msgid "Field Placeholders"
 msgstr "متن نگهدارنده فیلدها"
 
-#: includes/admin-settings.php:343
+#: includes/admin-settings.php:309
 msgid "2. Certificate URL Settings"
 msgstr "2. تنظیمات URL مدرک"
 
-#: includes/admin-settings.php:351
+#: includes/admin-settings.php:315
 msgid "Base URL Slug"
 msgstr "اسلاگ پایه URL"
 
-#: includes/admin-settings.php:361
+#: includes/admin-settings.php:322
 msgid "3. Download Button Customization"
 msgstr "3. شخصی‌سازی دکمه دانلود"
 
-#: includes/admin-settings.php:369
+#: includes/admin-settings.php:328
 msgid "Download Button Text"
 msgstr "متن و رنگ دکمه دانلود:"
 
-#: includes/admin-settings.php:378
+#: includes/admin-settings.php:335
 msgid "Download Button Color"
 msgstr "رنگ دکمه دانلود"
 
-#: includes/admin-settings.php:388
+#: includes/admin-settings.php:342
 msgid "4. Labels and Titles Settings"
 msgstr "4. تنظیمات برچسب‌ها و عناوین"
 
-#: includes/admin-settings.php:396
+#: includes/admin-settings.php:348
 msgid "Details Section Heading"
 msgstr "عنوان بخش جزئیات"
 
-#: includes/admin-settings.php:405
+#: includes/admin-settings.php:355
 msgid "Info Metabox Title"
 msgstr "عنوان متاباکس اطلاعات"
 
-#: includes/admin-settings.php:414
+#: includes/admin-settings.php:362
 msgid "Personal Photo Field Label"
 msgstr "برچسب فیلد عکس پرسنلی"
 
-#: includes/admin-settings.php:423
+#: includes/admin-settings.php:369
 msgid "Main File Metabox Title"
 msgstr "عنوان متاباکس فایل اصلی"
 
-#: includes/admin-settings.php:463
+#: includes/admin-settings.php:392
+msgid "Select Language"
+msgstr "انتخاب زبان"
+
+#: includes/admin-settings.php:407
 msgid ""
 "In this section, you can define the fields you want to enter for each "
 "certificate. You can specify the display order of the fields by dragging the "
@@ -391,59 +439,35 @@ msgstr ""
 "ترتیب نمایش فیلدها را مشخص کنید. حداکثر دو فیلد متنی را می‌توانید به عنوان "
 "\"فیلد کلیدی\" برای جستجو انتخاب کنید."
 
-#: includes/admin-settings.php:483
-msgid "Drag to reorder"
-msgstr "جابجا کنید"
-
-#: includes/admin-settings.php:487 includes/admin-settings.php:527
-msgid "Field Type:"
-msgstr "نوع فیلد:"
-
-#: includes/admin-settings.php:487 includes/admin-settings.php:530
+#: includes/admin-settings.php:424 includes/admin-settings.php:461
 msgid "Image"
 msgstr "تصویر"
 
-#: includes/admin-settings.php:487 includes/admin-settings.php:529
+#: includes/admin-settings.php:424 includes/admin-settings.php:460
 msgid "Text"
 msgstr "متنی"
 
-#: includes/admin-settings.php:489
-msgid "Key Name:"
-msgstr "نام کلیدی (Key):"
-
-#: includes/admin-settings.php:493
-msgid "Field Label:"
-msgstr "عنوان فیلد:"
-
-#: includes/admin-settings.php:503
-msgid "Key field for search?"
-msgstr "فیلد کلیدی برای جستجو؟"
-
-#: includes/admin-settings.php:514
+#: includes/admin-settings.php:445
 msgid "Delete this field"
 msgstr "حذف این فیلد"
 
-#: includes/admin-settings.php:516 includes/admin-settings.php:1404
-msgid "Delete"
-msgstr "حذف"
-
-#: includes/admin-settings.php:522
+#: includes/admin-settings.php:453
 msgid "No fields have been defined yet. Add a new field using the section below."
 msgstr "هنوز هیچ فیلدی تعریف نشده است. از بخش زیر یک فیلد جدید اضافه کنید."
 
-#: includes/admin-settings.php:526
+#: includes/admin-settings.php:457
 msgid "Add New Field"
 msgstr "افزودن فیلد جدید"
 
-#: includes/admin-settings.php:532
+#: includes/admin-settings.php:463
 msgid "Add Field"
 msgstr "افزودن فیلد"
 
-#: includes/admin-settings.php:533
+#: includes/admin-settings.php:464
 msgid "After adding, you can change the field order by dragging and dropping."
 msgstr "پس از افزودن، می‌توانید ترتیب فیلدها را با کشیدن و رها کردن تغییر دهید."
 
-#: includes/admin-settings.php:639
+#: includes/admin-settings.php:519
 msgid ""
 "You cannot select more than 2 key fields. Only the first 2 in the order were "
 "saved as keys."
@@ -451,11 +475,11 @@ msgstr ""
 "شما نمی‌توانید بیش از 2 فیلد کلیدی انتخاب کنید. فقط 2 تای اول در ترتیب به عنوان "
 "کلیدی ذخیره شدند."
 
-#: includes/admin-settings.php:658
+#: includes/admin-settings.php:527
 msgid "Settings for the text and button of the inquiry form."
 msgstr "تنظیمات متن و دکمه فرم استعلام."
 
-#: includes/admin-settings.php:679
+#: includes/admin-settings.php:538
 msgid ""
 "This text will be displayed before the search form. You can use all the "
 "features of the WordPress editor."
@@ -463,16 +487,16 @@ msgstr ""
 "این متن قبل از فرم جستجو نمایش داده می‌شود. می‌توانید از تمام امکانات ویرایشگر "
 "وردپرس استفاده کنید."
 
-#: includes/admin-settings.php:691 includes/admin-settings.php:923
-#: public/shortcode-lookup.php:240
+#: includes/admin-settings.php:543 includes/admin-settings.php:667
+#: public/shortcode-lookup.php:166
 msgid "Search"
 msgstr "جستجو"
 
-#: includes/admin-settings.php:709
+#: includes/admin-settings.php:553
 msgid "Background color for the search button."
 msgstr "رنگ پس‌زمینه دکمه جستجو."
 
-#: includes/admin-settings.php:733
+#: includes/admin-settings.php:566
 msgid ""
 "First, select at least one field as a \"key field\" in the \"Field Management\" "
 "tab."
@@ -480,25 +504,25 @@ msgstr ""
 "ابتدا حداقل یک فیلد را به عنوان \"فیلد کلیدی\" در تب \"مدیریت فیلدها\" انتخاب "
 "کنید."
 
-#: includes/admin-settings.php:738
+#: includes/admin-settings.php:569
 msgid "Placeholder text (hint) displayed inside each search field:"
 msgstr "متن نگهدارنده (راهنما) که داخل هر فیلد جستجو نمایش داده می‌شود:"
 
-#: includes/admin-settings.php:749 public/shortcode-lookup.php:257
+#: includes/admin-settings.php:572 public/shortcode-lookup.php:173
 #, php-format
 msgid "Please enter %s"
 msgstr "لطفا %s را وارد کنید"
 
-#: includes/admin-settings.php:766
+#: includes/admin-settings.php:581
 msgid ""
 "In this section, you can set the fixed part of the certificate URLs (slug)."
 msgstr "در این بخش می‌توانید بخش ثابت URL مدرک‌ها (اسلاگ) را تنظیم کنید."
 
-#: includes/admin-settings.php:768
+#: includes/admin-settings.php:582
 msgid "Important:"
 msgstr "مهم:"
 
-#: includes/admin-settings.php:772
+#: includes/admin-settings.php:584
 #, php-format
 msgid ""
 "After changing and saving this value, you must visit the Settings > %s page in "
@@ -509,83 +533,83 @@ msgstr ""
 "مراجعه کرده و دکمه \"ذخیره تغییرات\" را بزنید (حتی بدون تغییر چیزی در آن صفحه). "
 "این کار برای اعمال ساختار URL جدید ضروری است."
 
-#: includes/admin-settings.php:773
+#: includes/admin-settings.php:585
 msgid "Permalinks"
 msgstr "پیوندهای یکتا"
 
-#: includes/admin-settings.php:791
+#: includes/admin-settings.php:596
 msgid "Use only lowercase English letters, numbers, and hyphens (-)."
 msgstr "فقط از حروف کوچک انگلیسی، اعداد و خط تیره (-) استفاده کنید."
 
-#: includes/admin-settings.php:797
+#: includes/admin-settings.php:600
 #, php-format
 msgid "Current certificate URL structure: %s"
 msgstr "ساختار فعلی URL مدرک‌ها: %s"
 
-#: includes/admin-settings.php:815
+#: includes/admin-settings.php:609
 msgid ""
 "Settings for the text and color of the \"Download Certificate File\" button "
 "displayed on the details page."
 msgstr ""
 "تنظیمات متن و رنگ دکمه \"دانلود فایل مدرک\" که در صفحه جزئیات نمایش داده می‌شود."
 
-#: includes/admin-settings.php:827 includes/admin-settings.php:927
-#: public/shortcode-lookup.php:115 templates/single-fb_certificate.php:124
+#: includes/admin-settings.php:614 includes/admin-settings.php:671
+#: public/shortcode-lookup.php:74 templates/single-fb_certificate.php:85
 msgid "Download Certificate File"
 msgstr "دانلود فایل مدرک"
 
-#: includes/admin-settings.php:843
+#: includes/admin-settings.php:624
 msgid "Background color for the download button."
 msgstr "رنگ پس‌زمینه دکمه دانلود."
 
-#: includes/admin-settings.php:856
+#: includes/admin-settings.php:628
 msgid "Change the default text for some parts of the plugin here."
 msgstr "متن‌های پیش‌فرض برخی از بخش‌های افزونه را در اینجا تغییر دهید."
 
-#: includes/admin-settings.php:866 includes/admin-settings.php:930
-#: public/shortcode-lookup.php:45 templates/single-fb_certificate.php:46
+#: includes/admin-settings.php:633 includes/admin-settings.php:673
+#: public/shortcode-lookup.php:29 templates/single-fb_certificate.php:35
 msgid "Certificate Details:"
 msgstr "جزئیات مدرک:"
 
-#: includes/admin-settings.php:869
+#: includes/admin-settings.php:636
 msgid ""
 "The heading displayed above the custom fields list on the certificate view page."
 msgstr "عنوانی که بالای لیست فیلدهای سفارشی در صفحه نمایش مدرک نشان داده می‌شود."
 
-#: includes/admin-settings.php:882
+#: includes/admin-settings.php:644
 msgid "Title for the main metabox on the certificate edit/add screen."
 msgstr "عنوان متاباکس آپلود فایل اصلی در صفحه ویرایش/افزودن مدرک."
 
-#: includes/admin-settings.php:895
+#: includes/admin-settings.php:652
 msgid ""
 "Label for the personal photo upload field on the certificate edit/add screen."
 msgstr "برچسب فیلد آپلود عکس پرسنلی در صفحه ویرایش/افزودن مدرک."
 
-#: includes/admin-settings.php:908
+#: includes/admin-settings.php:660
 msgid "Title for the main file upload metabox on the certificate edit/add screen."
 msgstr "عنوان متاباکس آپلود فایل اصلی در صفحه ویرایش/افزودن مدرک."
 
-#: includes/admin-settings.php:1021 includes/admin-settings.php:1081
+#: includes/admin-settings.php:728 includes/admin-settings.php:767
 msgid "Security check failed!"
 msgstr "خطای امنیتی!"
 
-#: includes/admin-settings.php:1022 includes/admin-settings.php:1081
+#: includes/admin-settings.php:729 includes/admin-settings.php:767
 msgid "Security Error"
 msgstr "خطای امنیتی"
 
-#: includes/admin-settings.php:1030 includes/admin-settings.php:1086
+#: includes/admin-settings.php:735 includes/admin-settings.php:770
 msgid "You do not have permission to perform this action."
 msgstr "شما اجازه انجام این کار را ندارید."
 
-#: includes/admin-settings.php:1031 includes/admin-settings.php:1086
+#: includes/admin-settings.php:736 includes/admin-settings.php:770
 msgid "Permission Denied"
 msgstr "عدم دسترسی"
 
-#: includes/admin-settings.php:1214
+#: includes/admin-settings.php:846
 msgid "Settings imported and saved successfully."
 msgstr "تنظیمات با موفقیت وارد و ذخیره شدند."
 
-#: includes/admin-settings.php:1215
+#: includes/admin-settings.php:847
 msgid ""
 "If the URL slug was changed, please visit the Settings > Permalinks page and "
 "click Save Changes."
@@ -593,111 +617,111 @@ msgstr ""
 "اگر اسلاگ URL تغییر کرده است، لطفاً به صفحه تنظیمات > پیوندهای یکتا مراجعه و "
 "دکمه ذخیره را بزنید."
 
-#: includes/admin-settings.php:1226
+#: includes/admin-settings.php:853
 msgid "File size exceeds the limit allowed by php.ini."
 msgstr "حجم فایل بیشتر از حد مجاز php.ini است."
 
-#: includes/admin-settings.php:1227
+#: includes/admin-settings.php:854
 msgid "File size exceeds the limit allowed by the form."
 msgstr "حجم فایل بیشتر از حد مجاز فرم است."
 
-#: includes/admin-settings.php:1228
+#: includes/admin-settings.php:855
 msgid "The file was only partially uploaded."
 msgstr "فایل ناقص آپلود شد."
 
-#: includes/admin-settings.php:1229
+#: includes/admin-settings.php:856
 msgid "No file was selected for upload."
 msgstr "فایلی انتخاب نشده بود."
 
-#: includes/admin-settings.php:1230
+#: includes/admin-settings.php:857
 msgid "Missing temporary folder."
 msgstr "پوشه موقت یافت نشد."
 
-#: includes/admin-settings.php:1231
+#: includes/admin-settings.php:858
 msgid "Failed to write file to disk."
 msgstr "خطا در نوشتن فایل."
 
-#: includes/admin-settings.php:1232
+#: includes/admin-settings.php:859
 msgid "File upload stopped by a PHP extension."
 msgstr "آپلود توسط افزونه PHP متوقف شد."
 
-#: includes/admin-settings.php:1233
+#: includes/admin-settings.php:860
 msgid "No file found."
 msgstr "فایلی یافت نشد."
 
-#: includes/admin-settings.php:1234
+#: includes/admin-settings.php:861
 msgid "Unknown upload error."
 msgstr "خطای نامشخص آپلود."
 
-#: includes/admin-settings.php:1239
+#: includes/admin-settings.php:864
 msgid "Error uploading file:"
 msgstr "خطا در آپلود فایل:"
 
-#: includes/admin-settings.php:1246
+#: includes/admin-settings.php:869
 msgid "Invalid file format. Please upload a .json file only."
 msgstr "فرمت فایل نامعتبر است. لطفاً فقط فایل .json آپلود کنید."
 
-#: includes/admin-settings.php:1253
+#: includes/admin-settings.php:874
 msgid "Error reading file content."
 msgstr "خطا در خواندن محتوای فایل."
 
-#: includes/admin-settings.php:1264
+#: includes/admin-settings.php:881
 msgid "Maximum stack depth exceeded."
 msgstr "حداکثر عمق پشته."
 
-#: includes/admin-settings.php:1265
+#: includes/admin-settings.php:882
 msgid "Invalid or malformed JSON."
 msgstr "JSON نامعتبر/ناقص."
 
-#: includes/admin-settings.php:1266
+#: includes/admin-settings.php:883
 msgid "Control character error, possibly incorrectly encoded."
 msgstr "کاراکتر کنترلی نامعتبر."
 
-#: includes/admin-settings.php:1267
+#: includes/admin-settings.php:884
 msgid "Syntax error."
 msgstr "خطای نحوی (سینتکس کد)."
 
-#: includes/admin-settings.php:1268
+#: includes/admin-settings.php:885
 msgid "Malformed UTF-8 characters, possibly incorrectly encoded."
 msgstr "کاراکتر UTF-8 نامعتبر."
 
-#: includes/admin-settings.php:1269
+#: includes/admin-settings.php:886
 msgid "Recursive references detected."
 msgstr "ارجاع بازگشتی."
 
-#: includes/admin-settings.php:1270
+#: includes/admin-settings.php:887
 msgid "NAN or INF value encountered."
 msgstr "مقدار NAN یا INF."
 
-#: includes/admin-settings.php:1271
+#: includes/admin-settings.php:888
 msgid "A value of an unsupported type was found."
 msgstr "نوع داده غیرقابل انکود."
 
-#: includes/admin-settings.php:1272
+#: includes/admin-settings.php:889
 msgid "An invalid property name was found."
 msgstr "نام خصوصیت نامعتبر."
 
-#: includes/admin-settings.php:1273
+#: includes/admin-settings.php:890
 msgid "Malformed UTF-16 characters, possibly incorrectly encoded."
 msgstr "کاراکتر UTF-16 نامعتبر."
 
-#: includes/admin-settings.php:1275
+#: includes/admin-settings.php:892
 msgid "Unknown JSON error."
 msgstr "خطای ناشناخته JSON."
 
-#: includes/admin-settings.php:1276
+#: includes/admin-settings.php:893
 msgid "Invalid JSON file:"
 msgstr "فایل JSON نامعتبر است:"
 
-#: includes/admin-settings.php:1283
+#: includes/admin-settings.php:898
 msgid "Invalid JSON data structure."
 msgstr "ساختار داده JSON نامعتبر است."
 
-#: includes/admin-settings.php:1379
+#: includes/admin-settings.php:948
 msgid "FanaByte Certificate Inquiry Plugin Usage Guide"
 msgstr "راهنمای استفاده از افزونه استعلام مدرک فنابایت"
 
-#: includes/admin-settings.php:1380
+#: includes/admin-settings.php:949
 msgid ""
 "Welcome to the FanaByte Certificate plugin guide! This guide explains the steps "
 "to use the various features of the plugin."
@@ -705,11 +729,11 @@ msgstr ""
 "به راهنمای افزونه استعلام مدرک فنابایت خوش آمدید! در این راهنما، مراحل استفاده "
 "از امکانات مختلف افزونه شرح داده شده است."
 
-#: includes/admin-settings.php:1383
+#: includes/admin-settings.php:951
 msgid "Initial Important Note:"
 msgstr "نکته مهم اولیه:"
 
-#: includes/admin-settings.php:1385
+#: includes/admin-settings.php:953
 #, php-format
 msgid ""
 "After activating the plugin or anytime you change the \"Base URL Slug\" in the "
@@ -720,16 +744,16 @@ msgstr ""
 "دادید، توصیه می‌شود یک بار به صفحه %1$s مراجعه و روی دکمه \"ذخیره تغییرات\" کلیک "
 "کنید تا مطمئن شوید لینک مدرک‌ها به درستی کار می‌کند."
 
-#: includes/admin-settings.php:1386 includes/admin-settings.php:1423
-#: includes/admin-settings.php:1493 includes/admin-settings.php:1500
+#: includes/admin-settings.php:954 includes/admin-settings.php:986
+#: includes/admin-settings.php:1047 includes/admin-settings.php:1052
 msgid "Settings > Permalinks"
 msgstr "تنظیمات > پیوندهای یکتا"
 
-#: includes/admin-settings.php:1394
+#: includes/admin-settings.php:959
 msgid "1. Initial Setup: Field Management"
 msgstr "1. تنظیمات اولیه: مدیریت فیلدها"
 
-#: includes/admin-settings.php:1395
+#: includes/admin-settings.php:960
 msgid ""
 "The first step after installation and activation is to define the fields you "
 "want to have for each certificate."
@@ -737,20 +761,20 @@ msgstr ""
 "اولین قدم پس از نصب و فعال‌سازی، تعریف فیلدهایی است که می‌خواهید برای هر مدرک "
 "داشته باشید."
 
-#: includes/admin-settings.php:1397 includes/admin-settings.php:1444
+#: includes/admin-settings.php:962 includes/admin-settings.php:1005
 #, php-format
 msgid "From the admin menu, go to %s."
 msgstr "از منوی پیشخوان به %s بروید."
 
-#: includes/admin-settings.php:1397 includes/admin-settings.php:1490
+#: includes/admin-settings.php:962 includes/admin-settings.php:1044
 msgid "Certificates -> Settings"
 msgstr "استعلام مدرک -> تنظیمات"
 
-#: includes/admin-settings.php:1398
+#: includes/admin-settings.php:963
 msgid "Make sure you are on the \"Field Management\" tab."
 msgstr "مطمئن شوید در تب \"مدیریت فیلدها\" هستید."
 
-#: includes/admin-settings.php:1399
+#: includes/admin-settings.php:964
 msgid ""
 "In the \"Add New Field\" section: Select the field type (Text or Image) and "
 "click the \"Add Field\" button."
@@ -758,7 +782,7 @@ msgstr ""
 "در بخش \"افزودن فیلد جدید\": نوع فیلد (متنی یا تصویر) را انتخاب و روی دکمه "
 "\"افزودن فیلد\" کلیک کنید."
 
-#: includes/admin-settings.php:1400
+#: includes/admin-settings.php:965
 msgid ""
 "The new field will be added to the list above. Enter an appropriate \"Field "
 "Label\" (e.g., Student Name, National ID, Course Name)."
@@ -766,7 +790,7 @@ msgstr ""
 "فیلد جدید به لیست بالا اضافه می‌شود. \"عنوان فیلد\" مناسب را وارد کنید (مثلاً: "
 "نام دانشجو، کد ملی، نام دوره)."
 
-#: includes/admin-settings.php:1401
+#: includes/admin-settings.php:966
 msgid ""
 "The \"Key Name\" is generated automatically and is used to identify the field "
 "in the system."
@@ -774,7 +798,7 @@ msgstr ""
 "\"نام کلیدی (Key)\" به صورت خودکار ایجاد می‌شود و برای شناسایی فیلد در سیستم "
 "استفاده می‌شود."
 
-#: includes/admin-settings.php:1402
+#: includes/admin-settings.php:967
 msgid ""
 "Key field for search?: Check this option if you want users to be able to query "
 "using this field (maximum 2 text fields)."
@@ -782,7 +806,7 @@ msgstr ""
 "فیلد کلیدی برای جستجو؟: اگر می‌خواهید کاربران با این فیلد بتوانند استعلام کنند، "
 "این گزینه را تیک بزنید (حداکثر 2 فیلد متنی)."
 
-#: includes/admin-settings.php:1403
+#: includes/admin-settings.php:968
 #, php-format
 msgid ""
 "To change the display order of the fields, drag and drop the move icon (%s) "
@@ -790,21 +814,21 @@ msgid ""
 msgstr ""
 "برای تغییر ترتیب نمایش فیلدها، آیکون (%s) کنار هر فیلد را کشیده و رها کنید."
 
-#: includes/admin-settings.php:1404
+#: includes/admin-settings.php:969
 #, php-format
 msgid "To delete a field, click the %s button."
 msgstr "برای حذف فیلد، روی دکمه %s کلیک کنید."
 
-#: includes/admin-settings.php:1405
+#: includes/admin-settings.php:970
 #, php-format
 msgid "After finishing, click the %s button."
 msgstr "پس از اتمام، روی دکمه %s کلیک کنید."
 
-#: includes/admin-settings.php:1410
+#: includes/admin-settings.php:973
 msgid "2. Form, URL, and Button Settings"
 msgstr "2. تنظیمات فرم، URL و دکمه‌ها"
 
-#: includes/admin-settings.php:1411
+#: includes/admin-settings.php:974
 msgid ""
 "In this section, you can customize the appearance and functionality of the "
 "search form, links, and related buttons."
@@ -812,19 +836,19 @@ msgstr ""
 "در این بخش می‌توانید ظاهر و عملکرد فرم جستجو، لینک‌ها و دکمه‌های مرتبط را سفارشی "
 "کنید."
 
-#: includes/admin-settings.php:1413
+#: includes/admin-settings.php:976
 msgid "Go to the \"Form/URL/Buttons Settings\" tab."
 msgstr "به تب \"تنظیمات فرم/URL/دکمه‌ها\" بروید."
 
-#: includes/admin-settings.php:1414
+#: includes/admin-settings.php:977
 msgid "Inquiry Form Customization:"
 msgstr "شخصی‌سازی فرم استعلام:"
 
-#: includes/admin-settings.php:1416
+#: includes/admin-settings.php:979
 msgid "Text Above Form:"
 msgstr "متن بالای فرم:"
 
-#: includes/admin-settings.php:1416
+#: includes/admin-settings.php:979
 msgid ""
 "Using the full WordPress editor, add help text, images, or any other content "
 "before the search form."
@@ -832,31 +856,31 @@ msgstr ""
 "با ویرایشگر کامل وردپرس، متن راهنما، تصویر یا هر محتوای دیگری را قبل از فرم "
 "جستجو قرار دهید."
 
-#: includes/admin-settings.php:1417
+#: includes/admin-settings.php:980
 msgid "Search Button Text & Color:"
 msgstr "متن و رنگ دکمه جستجو:"
 
-#: includes/admin-settings.php:1417
+#: includes/admin-settings.php:980
 msgid "Set the text and background color of the main form button."
 msgstr "متن و رنگ پس‌زمینه دکمه اصلی فرم را تنظیم کنید."
 
-#: includes/admin-settings.php:1418
+#: includes/admin-settings.php:981
 msgid "Placeholders:"
 msgstr "متن نگهدارنده:"
 
-#: includes/admin-settings.php:1418
+#: includes/admin-settings.php:981
 msgid "Specify the hint text inside the search fields (key fields)."
 msgstr "متن راهنمای داخل فیلدهای جستجو (فیلدهای کلیدی) را مشخص کنید."
 
-#: includes/admin-settings.php:1421
+#: includes/admin-settings.php:984
 msgid "Certificate URL Settings:"
 msgstr "تنظیمات URL مدرک:"
 
-#: includes/admin-settings.php:1423
+#: includes/admin-settings.php:986
 msgid "Base URL Slug:"
 msgstr "اسلاگ پایه URL:"
 
-#: includes/admin-settings.php:1423
+#: includes/admin-settings.php:986
 #, php-format
 msgid ""
 "Determine the fixed part of the URL (e.g., `certificate`). Only lowercase "
@@ -866,15 +890,15 @@ msgstr ""
 "بخش ثابت URL را تعیین کنید (مثلاً certificate). فقط حروف کوچک، اعداد و خط تیره "
 "مجاز است. پس از تغییر، حتماً به %s رفته و ذخیره کنید."
 
-#: includes/admin-settings.php:1426
+#: includes/admin-settings.php:989
 msgid "Download Button Customization:"
 msgstr "شخصی‌سازی دکمه دانلود:"
 
-#: includes/admin-settings.php:1428
+#: includes/admin-settings.php:991
 msgid "Download Button Text & Color:"
 msgstr "متن و رنگ دکمه دانلود:"
 
-#: includes/admin-settings.php:1428
+#: includes/admin-settings.php:991
 msgid ""
 "Set the text and background color of the \"Download Certificate File\" button "
 "that appears on the details page."
@@ -882,11 +906,11 @@ msgstr ""
 "متن و رنگ پس‌زمینه دکمه \"دانلود فایل مدرک\" که در صفحه جزئیات ظاهر می‌شود را "
 "تنظیم کنید."
 
-#: includes/admin-settings.php:1431
+#: includes/admin-settings.php:994
 msgid "Labels and Titles Settings:"
 msgstr "تنظیمات برچسب‌ها و عناوین:"
 
-#: includes/admin-settings.php:1433
+#: includes/admin-settings.php:996
 msgid ""
 "Customize various default labels like the \"Details Section Heading\" or "
 "metabox titles used in the admin area and frontend."
@@ -894,28 +918,28 @@ msgstr ""
 "برچسب‌های پیش‌فرض مختلف مانند \"عنوان بخش جزئیات\" یا عناوین متاباکس استفاده شده "
 "در بخش مدیریت و فرانت‌اند را سفارشی کنید."
 
-#: includes/admin-settings.php:1436
+#: includes/admin-settings.php:999
 #, php-format
 msgid "Finally, click the %s button."
 msgstr "در انتها روی دکمه %s کلیک کنید."
 
-#: includes/admin-settings.php:1441
+#: includes/admin-settings.php:1002
 msgid "3. Adding and Managing Certificates"
 msgstr "3. افزودن و مدیریت مدرک‌ها"
 
-#: includes/admin-settings.php:1442
+#: includes/admin-settings.php:1003
 msgid "Follow these steps to register user certificates:"
 msgstr "برای ثبت مدرک‌های کاربران مراحل زیر را دنبال کنید:"
 
-#: includes/admin-settings.php:1444
+#: includes/admin-settings.php:1005
 msgid "Certificates -> Add New"
 msgstr "استعلام مدرک -> افزودن جدید"
 
-#: includes/admin-settings.php:1445
+#: includes/admin-settings.php:1006
 msgid "Enter the certificate title (e.g., Course X Certificate - Student Name)."
 msgstr "عنوان مدرک را وارد کنید (مثلاً: مدرک دوره X - نام دانشجو)."
 
-#: includes/admin-settings.php:1446
+#: includes/admin-settings.php:1007
 #, php-format
 msgid ""
 "In the \"%s\" section, enter the values for the custom fields you defined for "
@@ -924,7 +948,7 @@ msgstr ""
 "در بخش \"%s\"، مقادیر مربوط به فیلدهای سفارشی که تعریف کرده‌اید را برای این مدرک "
 "خاص وارد کنید."
 
-#: includes/admin-settings.php:1447
+#: includes/admin-settings.php:1008
 #, php-format
 msgid ""
 "In the sidebar, in the \"%s\" metabox, upload the final certificate PDF or "
@@ -933,7 +957,7 @@ msgstr ""
 "در سایدبار، در متاباکس \"%s\"، فایل PDF یا تصویر نهایی مدرک را آپلود کنید "
 "(اختیاری)."
 
-#: includes/admin-settings.php:1448
+#: includes/admin-settings.php:1009
 msgid ""
 "You can use the main editor for additional descriptions or to display specific "
 "content on the certificate page (optional)."
@@ -941,42 +965,42 @@ msgstr ""
 "می‌توانید از ویرایشگر اصلی برای توضیحات بیشتر یا نمایش محتوای خاصی در صفحه مدرک "
 "استفاده کنید (اختیاری)."
 
-#: includes/admin-settings.php:1449
+#: includes/admin-settings.php:1010
 #, php-format
 msgid "If needed, edit the %s (Slug) in the corresponding metabox."
 msgstr "در صورت نیاز، %s (Slug) را در متاباکس مربوطه ویرایش کنید."
 
-#: includes/admin-settings.php:1449
+#: includes/admin-settings.php:1010
 msgid "Permalink"
 msgstr "پیوند یکتا"
 
-#: includes/admin-settings.php:1450
+#: includes/admin-settings.php:1011
 #, php-format
 msgid "Click the %s button."
 msgstr "روی دکمه %s کلیک کنید."
 
-#: includes/admin-settings.php:1450
+#: includes/admin-settings.php:1011
 msgid "Publish"
 msgstr "انتشار"
 
-#: includes/admin-settings.php:1451
+#: includes/admin-settings.php:1012
 #, php-format
 msgid "To manage all certificates, go to the %s menu."
 msgstr "برای مدیریت همه مدرک‌ها، به منوی %s مراجعه کنید."
 
-#: includes/admin-settings.php:1451
+#: includes/admin-settings.php:1012
 msgid "Certificates -> All Certificates"
 msgstr "استعلام مدرک -> همه مدرک‌ها"
 
-#: includes/admin-settings.php:1456
+#: includes/admin-settings.php:1015
 msgid "4. Displaying the Inquiry Form on Your Site"
 msgstr "4. نمایش فرم استعلام در سایت"
 
-#: includes/admin-settings.php:1457
+#: includes/admin-settings.php:1016
 msgid "To enable the inquiry feature for users:"
 msgstr "برای فعال کردن قابلیت استعلام برای کاربران:"
 
-#: includes/admin-settings.php:1459
+#: includes/admin-settings.php:1018
 msgid ""
 "Go to edit an existing page or post, or create a new page (e.g., titled "
 "\"Certificate Inquiry\")."
@@ -984,29 +1008,25 @@ msgstr ""
 "به بخش ویرایش یک برگه یا نوشته موجود بروید یا یک برگه جدید (مثلاً با عنوان "
 "\"استعلام مدرک\") ایجاد کنید."
 
-#: includes/admin-settings.php:1460
+#: includes/admin-settings.php:1019
 msgid ""
 "In the content editor, place the following shortcode where you want the form to "
 "appear:"
 msgstr "در ویرایشگر محتوا، شورت‌کد زیر را در محل دلخواه قرار دهید:"
 
-#: includes/admin-settings.php:1464
+#: includes/admin-settings.php:1022
 msgid "Click to copy"
 msgstr "برای کپی کلیک کنید"
 
-#: includes/admin-settings.php:1465
+#: includes/admin-settings.php:1023
 msgid "Copy Code"
 msgstr "کپی کد"
 
-#: includes/admin-settings.php:1468
-msgid "Copied!"
-msgstr "کپی شد!"
-
-#: includes/admin-settings.php:1472
+#: includes/admin-settings.php:1030
 msgid "Publish or update the page/post."
 msgstr "برگه/نوشته را منتشر یا به‌روزرسانی کنید."
 
-#: includes/admin-settings.php:1474
+#: includes/admin-settings.php:1032
 msgid ""
 "Now, users visiting this page can search for their certificate by entering the "
 "key field information."
@@ -1014,19 +1034,19 @@ msgstr ""
 "اکنون کاربران با مراجعه به این برگه می‌توانند با وارد کردن اطلاعات فیلدهای "
 "کلیدی، مدرک خود را جستجو کنند."
 
-#: includes/admin-settings.php:1478
+#: includes/admin-settings.php:1034
 msgid "5. Direct Certificate View and QR Code"
 msgstr "5. مشاهده مستقیم مدرک و کد QR"
 
-#: includes/admin-settings.php:1479
+#: includes/admin-settings.php:1035
 msgid "Each published certificate has a direct link and a QR code:"
 msgstr "هر مدرک منتشر شده، یک لینک مستقیم و یک کد QR دارد:"
 
-#: includes/admin-settings.php:1481
+#: includes/admin-settings.php:1037
 msgid "Direct Link:"
 msgstr "لینک مستقیم:"
 
-#: includes/admin-settings.php:1481
+#: includes/admin-settings.php:1037
 msgid ""
 "The unique URL for each certificate, which you can get from the edit screen or "
 "the certificate list. Its structure is based on the \"Base URL Slug\" set in "
@@ -1036,11 +1056,11 @@ msgstr ""
 "دریافت کنید. ساختار کلی آن بر اساس \"اسلاگ پایه URL\" تنظیم شده در مرحله 2 و "
 "اسلاگ خود مدرک است."
 
-#: includes/admin-settings.php:1482
+#: includes/admin-settings.php:1038
 msgid "QR Code:"
 msgstr "کد QR:"
 
-#: includes/admin-settings.php:1482
+#: includes/admin-settings.php:1038
 msgid ""
 "An image code containing the direct link to the certificate. This code is "
 "displayed in the corresponding column in the \"All Certificates\" list and also "
@@ -1051,33 +1071,33 @@ msgstr ""
 "مدرک‌ها\" و همچنین در صفحه جزئیات مدرک در سایت نمایش داده می‌شود. مناسب برای چاپ "
 "یا اشتراک‌گذاری سریع."
 
-#: includes/admin-settings.php:1487
+#: includes/admin-settings.php:1041
 msgid "6. Importing and Exporting Settings"
 msgstr "6. ردات و صادرات تنظیمات"
 
-#: includes/admin-settings.php:1488
+#: includes/admin-settings.php:1042
 msgid "To back up or transfer plugin settings:"
 msgstr "برای پشتیبان‌گیری یا انتقال تنظیمات افزونه:"
 
-#: includes/admin-settings.php:1490
+#: includes/admin-settings.php:1044
 #, php-format
 msgid "Go to %1$s and select the %2$s tab."
 msgstr "به %1$s رفته و تب %2$s را انتخاب کنید."
 
-#: includes/admin-settings.php:1491
+#: includes/admin-settings.php:1045
 msgid "Exporting:"
 msgstr "خروجی گرفتن:"
 
-#: includes/admin-settings.php:1491
+#: includes/admin-settings.php:1045
 #, php-format
 msgid "Click the \"%s\" button to download a file containing all settings."
 msgstr "روی دکمه \"%s\" کلیک کنید تا یک فایل حاوی تمام تنظیمات دانلود شود."
 
-#: includes/admin-settings.php:1492
+#: includes/admin-settings.php:1046
 msgid "Importing:"
 msgstr "وارد کردن:"
 
-#: includes/admin-settings.php:1492
+#: includes/admin-settings.php:1046
 #, php-format
 msgid ""
 "Select the JSON settings file and click the \"%s\" button. Current settings "
@@ -1086,7 +1106,7 @@ msgstr ""
 "فایل JSON تنظیمات را انتخاب و روی دکمه \"%s\" کلیک کنید. تنظیمات فعلی بازنویسی "
 "خواهند شد."
 
-#: includes/admin-settings.php:1493
+#: includes/admin-settings.php:1047
 #, php-format
 msgid ""
 "Note: After importing, you might need to visit the %s page and click Save "
@@ -1095,32 +1115,32 @@ msgstr ""
 "توجه: پس از وارد کردن، ممکن است لازم باشد به صفحه %s مراجعه و یک بار دکمه ذخیره "
 "را بزنید."
 
-#: includes/admin-settings.php:1498
+#: includes/admin-settings.php:1050
 msgid "7. Troubleshooting"
 msgstr "7 عیب‌یابی"
 
-#: includes/admin-settings.php:1500
+#: includes/admin-settings.php:1052
 msgid "404 Error (Page Not Found):"
 msgstr "خطای 404 (صفحه یافت نشد):"
 
-#: includes/admin-settings.php:1500
+#: includes/admin-settings.php:1052
 #, php-format
 msgid "Usually resolved by visiting %s and clicking \"Save Changes\"."
 msgstr "معمولاً با مراجعه به %s و کلیک روی \"ذخیره تغییرات\" حل می‌شود."
 
-#: includes/admin-settings.php:1501
+#: includes/admin-settings.php:1053
 msgid "Incorrect Styles Display:"
 msgstr "عدم نمایش صحیح استایل‌ها:"
 
-#: includes/admin-settings.php:1501
+#: includes/admin-settings.php:1053
 msgid "Clear your browser and site cache."
 msgstr "کش مرورگر و سایت خود را پاک کنید."
 
-#: includes/admin-settings.php:1502
+#: includes/admin-settings.php:1054
 msgid "Other Issues:"
 msgstr "مشکلات دیگر:"
 
-#: includes/admin-settings.php:1502
+#: includes/admin-settings.php:1054
 #, php-format
 msgid ""
 "For further assistance or to report an issue, please refer to the \"%s\" page "
@@ -1129,148 +1149,160 @@ msgstr ""
 "برای راهنمایی بیشتر یا گزارش مشکل، لطفاً به صفحه \"%s\" در منوی افزونه مراجعه "
 "کنید."
 
-#: includes/cpt-register.php:45
+#: includes/admin-settings.php:1063
+msgid "Select the language and direction for the plugin interface."
+msgstr "زبان و جهت افزونه را انتخاب کنید."
+
+#: includes/admin-settings.php:1076
+msgid "Persian (RTL)"
+msgstr "فارسی (راست به چپ)"
+
+#: includes/admin-settings.php:1080
+msgid "English (LTR)"
+msgstr "انگلیسی (چپ به راست)"
+
+#: includes/cpt-register.php:35
 msgctxt "Post type general name"
 msgid "Certificates"
 msgstr "مدرک‌ها"
 
-#: includes/cpt-register.php:47
+#: includes/cpt-register.php:36
 msgctxt "Post type singular name"
 msgid "Certificate"
 msgstr "مدرک"
 
-#: includes/cpt-register.php:49
+#: includes/cpt-register.php:37
 msgctxt "Admin Menu text"
 msgid "Certificates"
 msgstr "مدرک‌ها"
 
-#: includes/cpt-register.php:51
+#: includes/cpt-register.php:38
 msgctxt "Add New on Toolbar"
 msgid "Certificate"
 msgstr "مدرک"
 
-#: includes/cpt-register.php:53
+#: includes/cpt-register.php:39
 msgid "Add New"
 msgstr "افزودن جدید"
 
-#: includes/cpt-register.php:55
+#: includes/cpt-register.php:40
 msgid "Add New Certificate"
 msgstr "افزودن مدرک جدید"
 
-#: includes/cpt-register.php:57
+#: includes/cpt-register.php:41
 msgid "New Certificate"
 msgstr "مدرک جدید"
 
-#: includes/cpt-register.php:59
+#: includes/cpt-register.php:42
 msgid "Edit Certificate"
 msgstr "ویرایش مدرک"
 
-#: includes/cpt-register.php:61
+#: includes/cpt-register.php:43
 msgid "View Certificate"
 msgstr "مشاهده مدرک"
 
-#: includes/cpt-register.php:63
+#: includes/cpt-register.php:44
 msgid "View Certificates"
 msgstr "مشاهده مدرک‌ها"
 
-#: includes/cpt-register.php:65
+#: includes/cpt-register.php:45
 msgid "All Certificates"
 msgstr "همه مدرک‌ها"
 
-#: includes/cpt-register.php:67
+#: includes/cpt-register.php:46
 msgid "Search Certificates"
 msgstr "جستجوی مدرک‌ها"
 
-#: includes/cpt-register.php:69
+#: includes/cpt-register.php:47
 msgid "Parent Certificate:"
 msgstr "والد مدرک:"
 
-#: includes/cpt-register.php:71
+#: includes/cpt-register.php:48
 msgid "No certificates found."
 msgstr "هیچ مدرکی یافت نشد."
 
-#: includes/cpt-register.php:73
+#: includes/cpt-register.php:49
 msgid "No certificates found in Trash."
 msgstr "هیچ مدرکی در زباله‌دان یافت نشد."
 
-#: includes/cpt-register.php:75
+#: includes/cpt-register.php:50
 msgctxt "Overrides the \"Featured Image\" phrase."
 msgid "Certificate Featured Image"
 msgstr "تصویر شاخص مدرک"
 
-#: includes/cpt-register.php:77
+#: includes/cpt-register.php:51
 msgctxt "Overrides the \"Set featured image\" phrase."
 msgid "Set featured image"
 msgstr "تنظیم تصویر شاخص"
 
-#: includes/cpt-register.php:79
+#: includes/cpt-register.php:52
 msgctxt "Overrides the \"Remove featured image\" phrase."
 msgid "Remove featured image"
 msgstr "حذف تصویر شاخص"
 
-#: includes/cpt-register.php:81
+#: includes/cpt-register.php:53
 msgctxt "Overrides the \"Use as featured image\" phrase."
 msgid "Use as featured image"
 msgstr "استفاده به عنوان تصویر شاخص"
 
-#: includes/cpt-register.php:83
+#: includes/cpt-register.php:54
 msgctxt "The post type archive label."
 msgid "Certificate Archives"
 msgstr "بایگانی مدرک‌ها"
 
-#: includes/cpt-register.php:85
+#: includes/cpt-register.php:55
 msgctxt "Overrides the \"Insert into post/page\" phrase."
 msgid "Insert into certificate"
 msgstr "افزودن به مدرک"
 
-#: includes/cpt-register.php:87
+#: includes/cpt-register.php:56
 msgctxt "Overrides the \"Uploaded to this post/page\" phrase."
 msgid "Uploaded to this certificate"
 msgstr "آپلود شده در این مدرک"
 
-#: includes/cpt-register.php:89
+#: includes/cpt-register.php:57
 msgctxt "Screen reader text for the filter links."
 msgid "Filter certificates list"
 msgstr "فیلتر لیست مدرک‌ها"
 
-#: includes/cpt-register.php:91
+#: includes/cpt-register.php:58
 msgctxt "Screen reader text for the pagination heading."
 msgid "Certificates list navigation"
 msgstr "پیمایش لیست مدرک‌ها"
 
-#: includes/cpt-register.php:93
+#: includes/cpt-register.php:59
 msgctxt "Screen reader text for the items list heading."
 msgid "Certificates list"
 msgstr "لیست مدرک‌ها"
 
-#: public/shortcode-lookup.php:221
+#: public/shortcode-lookup.php:157
 msgid "The requested certificate was not found or is invalid."
 msgstr "مدرک درخواستی یافت نشد یا معتبر نیست."
 
-#: public/shortcode-lookup.php:281
+#: public/shortcode-lookup.php:189
 msgid ""
 "The inquiry form is unavailable because no key fields have been defined in the "
 "plugin settings."
 msgstr ""
 "فرم استعلام در دسترس نیست زیرا هیچ فیلد کلیدی در تنظیمات افزونه تعریف نشده است."
 
-#: public/shortcode-lookup.php:298 public/shortcode-lookup.php:409
+#: public/shortcode-lookup.php:198 public/shortcode-lookup.php:271
 #, php-format
 msgid "Certificate Details: %s"
 msgstr "جزئیات مدرک: %s"
 
-#: public/shortcode-lookup.php:305
+#: public/shortcode-lookup.php:201
 msgid "New Search"
 msgstr "جستجوی جدید"
 
-#: public/shortcode-lookup.php:377
+#: public/shortcode-lookup.php:250
 #, php-format
 msgid "%d certificate found. Please select one to view:"
 msgid_plural "%d certificates found. Please select one to view:"
 msgstr[0] "%d مدرک یافت شد. لطفاً یکی را برای مشاهده انتخاب کنید:"
 msgstr[1] "%d مدرک یافت شد. لطفاً یکی را برای مشاهده انتخاب کنید:"
 
-#: public/shortcode-lookup.php:418
+#: public/shortcode-lookup.php:276
 msgid ""
 "Sorry, no certificate matching the provided details was found. Please check "
 "your input and try again."
@@ -1278,13 +1310,11 @@ msgstr ""
 "متاسفانه، مدرکی با مشخصات وارد شده یافت نشد. لطفاً ورودی خود را بررسی کرده و "
 "دوباره تلاش کنید."
 
-#: public/shortcode-lookup.php:421
+#: public/shortcode-lookup.php:279
 msgid "Error: Please enter all search fields correctly."
 msgstr "خطا: لطفاً تمام فیلدهای جستجو را به درستی وارد کنید."
 
-#. translators: %s: Name of current post. Only visible to screen readers.
-#. مترجمان: %s: نام پست فعلی. فقط برای صفحه خوان‌ها قابل مشاهده است.
-#: templates/single-fb_certificate.php:180
+#: templates/single-fb_certificate.php:121
 #, php-format
 msgid "Edit %s"
 msgstr "ویرایش %s"
